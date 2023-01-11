@@ -41,10 +41,10 @@ Disc I/O has intentionally been left out as Notional Labs has already done exten
 Upon completion of the test case we will have achieved consensus in the L1 Task Force on which KVStore work well for what use cases so we can make a collective decission on how to best position Terra Classic for the future "data scalability" issues inherent to the Cosmos SDK architecture.
 
 ## Hardware
-As we have intentionally left out the disc I/O KPI the testy cases does not have any hardware requirements. It is however important that the tests are performed on the same physical hardware.
+As we have intentionally left out the disc I/O KPI the test case does not have any hardware requirements. It is however important that the test scenarios are performed on the same physical hardware.
 
 ## Software
-The primary requirement on the software front is deciding on the OS which will be Ubuntu and Alpine to keep  it centered on Linux distrobutions that are used by the validator pillar in the Terra Classic network. Furthermore we will utilize the built-in GoLang profiling tools (go test, pprof, etc).
+The primary requirement on the software front is deciding on the OS, which will be Ubuntu & Alpine, to keep it centered on Linux distrobutions that are used by the "validator pillar" in the Terra Classic network. Furthermore we will utilize the built-in GoLang profiling tools (go test, pprof, etc).
 
 ## Procedural Requirements
 None
