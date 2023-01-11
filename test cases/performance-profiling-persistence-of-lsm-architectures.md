@@ -38,7 +38,7 @@ The desired outputs of our benchmarking efforts focus primarily on KPIs that are
 Disc I/O has intentionally been left out as Notional Labs has already done extensive (excellent) work on that subject and concluded that PebbleDB is by and large the most high performent database available in the market. However as such PebbleDB is optimized for "reading small values fast" (optimized for Facebook, which tends to favor "read performance & eventual consistency" over "write performance") which means it might not deal with the process of "compaction" (read + write amplification) as efficiently as alternatives like BadgerDB when the payload sizes grow above a certain size (> 64KB). As a general conclusion we are hoping to determine how these "hybrid LSM-tree architetures" deal with the afformentioned challenges under different scenarios.
 
 ## Post Conditions
-Upon completion of the test case we will have achieved consensus in the L1 Task Force on which KVStore archictures work well for what use cases so we can make a collective decission on how to best position Terra Classic for the future "data scalability" issues inherent to the Cosmos SDK architecture.
+Upon completion of the test case we will have achieved consensus in the L1 Task Force on which KVStore work well for what use cases so we can make a collective decission on how to best position Terra Classic for the future "data scalability" issues inherent to the Cosmos SDK architecture.
 
 ## Hardware
 As we have intentionally left out the disc I/O KPI the testy cases does not have any hardware requirements. It is however important that the tests are performed on the same physical hardware.
