@@ -6,7 +6,7 @@ Read / write amplification are major problems in many LSM-trees implementations,
 The purpose of this test case is to profile how the targeted KVStores supported by Cosmos SDK (RocksDB, PebbleDB & BadgerDB) perform under various scenarios with differents loads, key ordering and payload sizes in order to play to the strengths & weaknesses of the targeted LSM-tree implementations to benchmark the performance characteristics (cpu, memory, gc, threads, mutexes, etc) of the individual "compaction algorithms".
 
 ## Preconditions
-Our test scenario has no pre-conditions because the features can be tested in isolation and rely on standard GoLang tooling. As such we have noticed some breakage in the Terra Classic code when we use various flags, e.g. ´--bench´, which might require us to upgrade unit tests as we encounter problems in the existing test code. But by and large our test case is not very complex, as it focuses primarly on profiling the interaction between the underlying Cosmos SDK / Tendermint SDK dependencies, which means we can simply choose to work-around these issues and test the 3rd party dependencies directly. 
+Our test scenario has no preconditions because the features can be tested in isolation and rely on standard GoLang tooling. As such we have noticed some breakage in the Terra Classic code when we use various flags, e.g. ´--bench´, which might require us to upgrade unit tests as we encounter problems in the existing test code. But by and large our test case is not very complex, as it focuses primarly on profiling the interaction between the underlying Cosmos SDK / Tendermint SDK dependencies, which means we can simply choose to work-around these issues and test the 3rd party dependencies directly. 
 
 
 ## Input Specifications 
