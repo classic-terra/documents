@@ -17,7 +17,7 @@ Stops re-minting "manual burns" and instantly ships "burn tax" proceeds to the C
 With this alteration of the system we hope to achieve an  outcome that is desirable for all parties. As such we understand the concern about re-minting "manual burns" and it is our belief that if the code works as  intended it will solve that problem until such a time where the RewardPolicy is altered in a way that would re-enable segniorage re-minting.
 
 ### Consequnce of a YES vote
-If we vote YES on this proposal we will have a clear path to deploying the new feature which will allow us to collect "burn taxes" without having to rely on the segniorage logic built into the system.
+If we vote YES on this proposal we will have a clear path to deploying the new feature which will allow us to collect "burn taxes" without having to rely on the seigniorage logic built into the Treasury module.
 
 ### Consequnce of a NO vote
 If we vote NO on this proposal we will either be unable to collect "burn taxes" or we will have to continue re-minting "manual burns".
