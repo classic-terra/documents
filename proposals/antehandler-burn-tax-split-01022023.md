@@ -4,10 +4,10 @@
 ## Introduction
 In order to avoid the re-minting of "manual burns" during the seigniorage calculation we have worked with DemonMonkey to detail a solution where in the system will collect the "burn tax" directly in the AnteHandler by altering the NewBurnTaxFeeDecorator code to split the "burn taxes" into two halves with one going to  the Community Pool directly and another is sent to the burn wallet as per usual. In conjunction with a change to the RewardPolicy this will result in "burn taxes" being collected as intended while avoiding a re-mint of the "manual burns".
 
-## Ammendments
+## Amendments
 The current proposal consists of a single ammendment which seeks approval to deploy the altered NewBurnTaxFeeDecorator code. 
 
-### Ammendment 1/1
+### Amendment 1/1
 Approve the release of https://github.com/classic-terra/core/commit/6b8b172615ecf51e3e1fced43284ae3b55d23a0c into mainnet as part of v1.0.6.
 
 ## Acceptance Criteria
