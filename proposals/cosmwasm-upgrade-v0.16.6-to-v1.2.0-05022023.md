@@ -18,7 +18,7 @@ Approve the mandatory migration of smart contracts from `wasmvm` v0.16.6 to `was
 2.0.5 is deployed with the new `wasmd` v0.31 dependency and all active smart contracts are migrated to `wasmvm` v1.2.0.
 
 ## Summary
-As such it will be feasible for the L1 team to release the v2.0.5 client for download at the end of Q1. However depending on the success of `terrad` v1.0.6 and v2.0.4 respectively this milestone is subject to change and given the nature of the `wasmvm` upgrade we do not feel this is something that can or should be rushed. However as such it can not be understated how important this milestone is for the future of our network, as the release of v2.0.5 into mainnet will mark the conclusion of our upgrade efforts and begin our pivot towards focusing on building new features.
+Depending on the success of `terrad` v1.0.6 and v2.0.4 respectively this milestone is subject to change and given the nature of the `wasmvm` upgrade we do not feel this is something that can or should be rushed. However as such it can not be understated how important this milestone is for the future of our network, as the release of v2.0.5 into mainnet will mark the conclusion of our upgrade efforts and begin our pivot towards focusing on building new features.
 
 ### Consequnce of a YES vote
 If the vote is YES we will be able to upgrade `wasmd` to v0.31 and begin the process of migrating smart contracts to `wasmvm` v1.2.0.
