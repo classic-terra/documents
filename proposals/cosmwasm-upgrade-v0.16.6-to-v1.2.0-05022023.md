@@ -12,7 +12,7 @@ The proposal consists of a two ammendments which seeks approval to update our `w
 Update `wasmd` to v0.31 & `wasmvm` to v1.2.0.
 
 ### Ammendment 2/2
-Approve the mandatory migration of smart contracts from `wasmvm` v0.16.6 to `wasmvm` v1.2.0. 
+Approve the mandatory migration of smart contracts from `wasmvm` v0.16.6 to `wasmvm` v1.2.0. Contracts that do not migrate will stop functioning as we do not have the funding (or desire) to support a "dual VM setup", unless absolutely necessary.
 
 ## Acceptance Criteria
 2.0.5 is deployed with the new `wasmd` v0.31 dependency and all active smart contracts are migrated to `wasmvm` v1.2.0.
