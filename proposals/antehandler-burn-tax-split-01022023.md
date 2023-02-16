@@ -8,7 +8,7 @@ In order to avoid the re-minting of "manual burns" during the seigniorage calcul
 The current proposal consists of a single ammendment which seeks approval to deploy the altered NewBurnTaxFeeDecorator code. 
 
 ### Amendment 1/1
-Approve the release of https://github.com/classic-terra/core/commit/6b8b172615ecf51e3e1fced43284ae3b55d23a0c into mainnet as part of v1.0.6.
+Approve the release of https://github.com/classic-terra/core/commit/6b8b172615ecf51e3e1fced43284ae3b55d23a0c into mainnet as part of v1.1.0.
 
 ## Acceptance Criteria
 Stops re-minting "manual burns" and instantly ships "burn tax" proceeds to the CommunityPool.
