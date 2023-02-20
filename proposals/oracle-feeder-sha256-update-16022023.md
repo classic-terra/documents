@@ -13,7 +13,7 @@ Approve the release of [COMMIT_ID] into mainnet.
 [RELEASE_LINK] is deployed to mainnet.
 
 ## Summary
-To summarize with this patch we seek to resolve what we view as the most significant  security issue in our network. An issue that has been communicated to validators for some  time now however due to their inability to act on the matter we now  feel its time to seek public approval from the governance layer so we can entice them to update to our official release @ [RELEASE_LINK].
+To summarize with this patch we seek to embrace the new feature.js SDK from TFL, add in a few quality-of-life updates to our docker tooling and patch ad-hoc security issue in our network. This upgrade need has been communicated to validators for some  time now however due to their inability to act on the matter we now  feel its time to seek public approval from the governance layer so we can entice them to update to our official release @ [RELEASE_LINK].
 
 ### Consequnce of a YES vote
 If the vote results in a YES, we will work towards the succesful release of [RELEASE_LINK] into mainnet.
