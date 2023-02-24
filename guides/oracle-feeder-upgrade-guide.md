@@ -9,6 +9,9 @@ In order to upgrade the Oracle Feeder you need to complete the below steps.
 ### Step #1 - Delete existing Oracle Feeder installation
 Remove your existing Oracle Feeder installation.
 
+***Note*** <br/>
+Do not delete your installation if you do  not have access to your private key or mnenomic. In case either of these cases hold true please create a new discussion item @ https://github.com/classic-terra/core/discussions/categories/support 
+
 ### Step #2 - Clone Oracle Feeder repository
 git clone https://github.com/classic-terra/oracle-feeder.git
 git checkout [COMMIT_ID]
