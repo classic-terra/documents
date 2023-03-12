@@ -20,3 +20,5 @@
 5. Push docker image
 * bring image to ECR format: `docker tag <image name> public.ecr.aws/p5q2r9h7/<image name>`
 * `docker push public.ecr.aws/p5q2r9h7/<image name>`
+
+## notice: region value must be kept the same. It cannot be changed since IAM is wired to ca-central-1 and ecr public registry is wired to us-east-1
