@@ -12,7 +12,7 @@
 * aws2 configure sso (will output a profile name)
 	* https://d-9d670761e1.awsapps.com/start
     * ca-central-1
-* `aws ecr-public get-login-password --region us-east-1 --profile <profile name> | docker login --username AWS —password-stdin public.ecr.aws`
+* `aws ecr-public get-login-password --region us-east-1 --profile <profile-name> | docker login --username AWS --password-stdin public.ecr.aws`
 
 4. Create image repository on ECR
 * `aws ecr-public create-repository --repository-name <image name> --region us-east-1 --profile <profile name>`
