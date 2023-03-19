@@ -1,0 +1,621 @@
+custom/auth/legacy/v040/store.go:19:9: sloppyTypeAssert: type assertion from/to types are identical (gocritic)
+	return account.(types.AccountI), nil
+	       ^
+x/market/wasm/interface.go:22:6: exported: type name will be used as wasm.WasmMsgParser by other packages, and that stutters; consider calling this MsgParser (revive)
+type WasmMsgParser struct{}
+     ^
+x/market/wasm/interface.go:60:6: exported: type name will be used as wasm.WasmQuerier by other packages, and that stutters; consider calling this Querier (revive)
+type WasmQuerier struct {
+     ^
+x/market/wasm/interface_test.go:141:2: ineffectual assignment to res (ineffassign)
+	res, err := querier.QueryCustom(input.Ctx, bz)
+	^
+custom/auth/client/utils/feeutils.go:259:2: naked return in func `FilterMsgAndComputeTax` with 66 lines of code (nakedret)
+	return
+	^
+x/oracle/client/rest/tx.go:97:3: ifElseChain: rewrite if-else to switch statement (gocritic)
+		if len(req.Hash) == 0 && (len(req.ExchangeRates) > 0 && len(req.Salt) > 0) {
+		^
+custom/auth/ante/ante_test.go:142:3: commentFormatting: put a space between `//` and comment text (gocritic)
+		//if rand.Int63()%2 == 0 {
+		^
+custom/auth/ante/min_initial_deposit_test.go:4:2: commentFormatting: put a space between `//` and comment text (gocritic)
+	//"fmt"
+	^
+custom/auth/ante/min_initial_deposit_test.go:15:2: commentFormatting: put a space between `//` and comment text (gocritic)
+	//"github.com/cosmos/cosmos-sdk/types/query"
+	^
+custom/auth/ante/burntax_test.go:70:24: ineffectual assignment to err (ineffassign)
+	totalSupplyBefore, _, err := bk.GetPaginatedTotalSupply(suite.ctx, &query.PageRequest{})
+	                      ^
+custom/auth/ante/burntax_test.go:98:23: ineffectual assignment to err (ineffassign)
+	totalSupplyAfter, _, err := bk.GetPaginatedTotalSupply(suite.ctx, &query.PageRequest{})
+	                     ^
+custom/auth/ante/tax_test.go:227:6: ineffectual assignment to err (ineffassign)
+	tx, err = suite.CreateTestTx(privs, accNums, accSeqs, suite.ctx.ChainID())
+	    ^
+custom/auth/ante/tax_test.go:233:6: ineffectual assignment to err (ineffassign)
+	tx, err = suite.CreateTestTx(privs, accNums, accSeqs, suite.ctx.ChainID())
+	    ^
+custom/auth/ante/tax_test.go:563:6: ineffectual assignment to err (ineffassign)
+	tx, err = suite.CreateTestTx(privs, accNums, accSeqs, suite.ctx.ChainID())
+	    ^
+custom/auth/ante/tax_test.go:569:6: ineffectual assignment to err (ineffassign)
+	tx, err = suite.CreateTestTx(privs, accNums, accSeqs, suite.ctx.ChainID())
+	    ^
+custom/auth/ante/sigverify_test.go:79:13: SA1019: legacytx.StdSignature is deprecated: StdSignature represents a sig (staticcheck)
+		stdSig := legacytx.StdSignature{PubKey: pkSet1[i], Signature: sigSet1[i]}
+		          ^
+custom/auth/ante/ante_test.go:24:2: ST1019: package "github.com/cosmos/cosmos-sdk/x/auth/types" is being imported more than once (stylecheck)
+	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	^
+custom/auth/ante/ante_test.go:25:2: ST1019(related information): other import of "github.com/cosmos/cosmos-sdk/x/auth/types" (stylecheck)
+	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	^
+custom/auth/ante/integration_test.go:6:2: ST1019: package "github.com/classic-terra/core/custom/auth/ante" is being imported more than once (stylecheck)
+	"github.com/classic-terra/core/custom/auth/ante"
+	^
+custom/auth/ante/integration_test.go:7:2: ST1019(related information): other import of "github.com/classic-terra/core/custom/auth/ante" (stylecheck)
+	customante "github.com/classic-terra/core/custom/auth/ante"
+	^
+x/oracle/handler_test.go:147:115: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, invalidExchangeRateStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                                 ^
+x/oracle/handler_test.go:152:115: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, invalidExchangeRateStr, sdk.AccAddress(keeper.Addrs[1]), keeper.ValAddrs[0])
+	                                                                                                                 ^
+x/oracle/handler_test.go:157:117: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, unintendedExchageRateStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                                   ^
+x/oracle/handler_test.go:163:109: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, exchangeRatesStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                           ^
+x/oracle/handler_test.go:129:110: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg := types.NewMsgAggregateExchangeRateVote(salt, exchangeRatesStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                            ^
+x/oracle/handler_test.go:135:109: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, exchangeRatesStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                           ^
+x/oracle/handler_test.go:141:113: unnecessary conversion (unconvert)
+	aggregateExchangeRateVoteMsg = types.NewMsgAggregateExchangeRateVote(salt, otherExchangeRateStr, sdk.AccAddress(keeper.Addrs[0]), keeper.ValAddrs[0])
+	                                                                                                               ^
+x/oracle/common_test.go:17:2: var `uSDRAmt` is unused (unused)
+	uSDRAmt    = sdk.NewInt(1005 * core.MicroUnit)
+	^
+x/oracle/common_test.go:21:2: var `anotherRandomExchangeRate` is unused (unused)
+	anotherRandomExchangeRate = sdk.NewDecWithPrec(4882, 2) // swap rate
+	^
+x/oracle/wasm/interface_test.go:64:2: ineffectual assignment to res (ineffassign)
+	res, err = querier.QueryCustom(input.Ctx, bz)
+	^
+x/wasm/client/utils/utils_test.go:4:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/types/gas_meter_test.go:28:26: unnecessary conversion (unconvert)
+	require.Equal(t, sdk.Gas(10*compileCostPerByte), cost)
+	                        ^
+x/wasm/types/gas_meter_test.go:35:26: unnecessary conversion (unconvert)
+	require.Equal(t, sdk.Gas(instantiateCost+uint64(msgLength)*contractMessageDataCostPerByte), cost)
+	                        ^
+x/wasm/types/gas_store.go:8:2: ST1019: package "github.com/cosmos/cosmos-sdk/store/types" is being imported more than once (stylecheck)
+	"github.com/cosmos/cosmos-sdk/store/types"
+	^
+x/wasm/types/gas_store.go:9:2: ST1019(related information): other import of "github.com/cosmos/cosmos-sdk/store/types" (stylecheck)
+	stypes "github.com/cosmos/cosmos-sdk/store/types"
+	^
+custom/auth/tx/service.go:42:2: ifElseChain: rewrite if-else to switch statement (gocritic)
+	if len(req.TxBytes) != 0 {
+	^
+x/market/module.go:92:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//___________________________
+^
+x/market/module.go:176:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//____________________________________________________________________________
+^
+x/market/common_test.go:14:2: var `stakingAmt` is unused (unused)
+	stakingAmt = sdk.TokensFromConsensusPower(10, sdk.DefaultPowerReduction)
+	^
+x/market/common_test.go:13:2: var `uSDRAmt` is unused (unused)
+	uSDRAmt    = sdk.NewInt(1005 * core.MicroUnit)
+	^
+x/treasury/types/params.go:49: File is not `gofumpt`-ed (gofumpt)
+	DefaultMinInitialDepositRatio  = sdk.ZeroDec()				// 0% min initial deposit
+x/treasury/types/params.go:257: File is not `gofumpt`-ed (gofumpt)
+
+x/treasury/types/params.go:272: File is not `gofumpt`-ed (gofumpt)
+
+}
+
+x/treasury/client/cli/query.go:17:2: const `flagEpoch` is unused (unused)
+	flagEpoch = "epoch"
+	^
+x/treasury/client/cli/query.go:16:2: const `flagDenom` is unused (unused)
+	flagDenom = "denom"
+	^
+custom/auth/ante/min_initial_deposit.go:4: File is not `gofumpt`-ed (gofumpt)
+	"fmt"
+custom/auth/ante/tax.go:126:6: increment-decrement: should replace tainted += 1 with tainted++ (revive)
+					tainted += 1
+					^
+custom/auth/ante/tax.go:132:6: increment-decrement: should replace tainted += 1 with tainted++ (revive)
+					tainted += 1
+					^
+custom/auth/ante/sigverify.go:28:2: var `simSecp256k1Sig` is unused (unused)
+	simSecp256k1Sig    [64]byte
+	^
+custom/auth/ante/min_initial_deposit.go:36:10: ST1005: error strings should not be capitalized (stylecheck)
+		return fmt.Errorf("Could not dereference msg as MsgSubmitProposal")
+		       ^
+custom/auth/ante/min_initial_deposit.go:48:10: ST1005: error strings should not be capitalized (stylecheck)
+		return fmt.Errorf("Not enough initial deposit provided. Expected %q; got %q", requiredDepositCoins, initialDepositCoins)
+		       ^
+x/treasury/wasm/interface.go:61:2: ifElseChain: rewrite if-else to switch statement (gocritic)
+	if query.TaxRate != nil {
+	^
+x/treasury/wasm/interface.go:19:6: exported: type name will be used as wasm.WasmQuerier by other packages, and that stutters; consider calling this Querier (revive)
+type WasmQuerier struct {
+     ^
+x/market/keeper/swap.go:130:2: naked return in func `ComputeSwap` with 79 lines of code (nakedret)
+	return
+	^
+x/market/keeper/test_utils.go:92:2: var `valPubKeys` is unused (unused)
+	valPubKeys = simapp.CreateTestPubKeys(5)
+	^
+x/market/keeper/legacy_querier_test.go:79:2: ineffectual assignment to res (ineffassign)
+	res, err := querier(input.Ctx, []string{types.QuerySwap}, query)
+	^
+x/market/keeper/querier_test.go:48:2: ineffectual assignment to res (ineffassign)
+	res, err := querier.Swap(ctx, &types.QuerySwapRequest{OfferCoin: offerCoin, AskDenom: core.MicroLunaDenom})
+	^
+x/oracle/wasm/interface.go:18:6: exported: type name will be used as wasm.WasmQuerier by other packages, and that stutters; consider calling this Querier (revive)
+type WasmQuerier struct {
+     ^
+custom/authz/legacy/v043/migrate.go:26:4: ifElseChain: rewrite if-else to switch statement (gocritic)
+			if oldAuthorization.GrantMsgType == "swap" {
+			^
+x/vesting/module.go:22:2: field `cdc` is unused (unused)
+	cdc codec.Codec
+	^
+x/oracle/keeper/keeper_test.go:52:3: assignOp: replace `numExchangeRates = numExchangeRates + 1` with `numExchangeRates++` (gocritic)
+		numExchangeRates = numExchangeRates + 1
+		^
+x/oracle/keeper/ballot.go:55:2: naked return in func `OrganizeBallotByDenom` with 41 lines of code (nakedret)
+	return
+	^
+x/oracle/keeper/keeper_test.go:373:66: unnecessary conversion (unconvert)
+	input.OracleKeeper.SetFeederDelegation(input.Ctx, sdk.ValAddress(addr), sdk.AccAddress(addr1))
+	                                                                ^
+x/oracle/keeper/keeper_test.go:374:103: unnecessary conversion (unconvert)
+	require.NoError(t, input.OracleKeeper.ValidateFeeder(input.Ctx, sdk.AccAddress(addr1), sdk.ValAddress(addr)))
+	                                                                                                     ^
+x/oracle/keeper/keeper_test.go:375:78: unnecessary conversion (unconvert)
+	require.Error(t, input.OracleKeeper.ValidateFeeder(input.Ctx, sdk.AccAddress(Addrs[2]), sdk.ValAddress(addr)))
+	                                                                            ^
+x/oracle/keeper/keeper_test.go:378:80: unnecessary conversion (unconvert)
+	validator, found := input.StakingKeeper.GetValidator(input.Ctx, sdk.ValAddress(addr))
+	                                                                              ^
+x/oracle/keeper/keeper_test.go:382:101: unnecessary conversion (unconvert)
+	require.Error(t, input.OracleKeeper.ValidateFeeder(input.Ctx, sdk.AccAddress(addr1), sdk.ValAddress(addr)))
+	                                                                                                   ^
+x/oracle/keeper/keeper_test.go:369:102: unnecessary conversion (unconvert)
+	require.NoError(t, input.OracleKeeper.ValidateFeeder(input.Ctx, sdk.AccAddress(addr), sdk.ValAddress(addr)))
+	                                                                                                    ^
+x/oracle/keeper/keeper_test.go:370:103: unnecessary conversion (unconvert)
+	require.NoError(t, input.OracleKeeper.ValidateFeeder(input.Ctx, sdk.AccAddress(addr1), sdk.ValAddress(addr1)))
+	                                                                                                     ^
+x/oracle/keeper/params.go:43:2: S1023: redundant `return` statement (gosimple)
+	return
+	^
+custom/distribution/wasm/interface.go:18:6: exported: type name will be used as wasm.WasmMsgParser by other packages, and that stutters; consider calling this MsgParser (revive)
+type WasmMsgParser struct{}
+     ^
+app/legacy/migrate.go:6:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+app/legacy/pubkey_replacement.go:7:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/oracle/module.go:91:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//___________________________
+^
+x/oracle/module.go:171:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//____________________________________________________________________________
+^
+x/oracle/tally.go:44:2: naked return in func `Tally` with 31 lines of code (nakedret)
+	return
+	^
+x/oracle/abci.go:137:2: S1023: redundant `return` statement (gosimple)
+	return
+	^
+x/oracle/types/genesis.go:15:2: captLocal: `TobinTaxes' should not be capitalized (gocritic)
+	TobinTaxes []TobinTax,
+	^
+x/wasm/common_test.go:22:8: var `pub1` is unused (unused)
+	key1, pub1, addr1 = keyPubAddr()
+	      ^
+x/wasm/handler_test.go:131:16: ineffectual assignment to err (ineffassign)
+	contractInfo, err := input.WasmKeeper.GetContractInfo(input.Ctx, contractAddr)
+	              ^
+x/wasm/handler_test.go:197:16: ineffectual assignment to err (ineffassign)
+	contractInfo, err := input.WasmKeeper.GetContractInfo(input.Ctx, contractAddr)
+	              ^
+x/wasm/handler_test.go:293:16: ineffectual assignment to err (ineffassign)
+	contractInfo, err := input.WasmKeeper.GetContractInfo(input.Ctx, contractAddr)
+	              ^
+x/wasm/common_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/handler_test.go:306:2: SA4006: this value of `res` is never used (staticcheck)
+	res, err = h(input.Ctx, execCmd)
+	^
+custom/bank/wasm/interface.go:22:6: exported: type name will be used as wasm.WasmMsgParser by other packages, and that stutters; consider calling this MsgParser (revive)
+type WasmMsgParser struct{}
+     ^
+custom/bank/wasm/interface.go:57:6: exported: type name will be used as wasm.WasmQuerier by other packages, and that stutters; consider calling this Querier (revive)
+type WasmQuerier struct {
+     ^
+x/wasm/simulation/operations.go:182:6: func `keyPubAddr` is unused (unused)
+func keyPubAddr() (crypto.PrivKey, crypto.PubKey, sdk.AccAddress) {
+     ^
+x/wasm/simulation/operations.go:115:6: func `mustLoad` is unused (unused)
+func mustLoad(path string) []byte {
+     ^
+x/wasm/simulation/operations.go:7:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/simulation/operations.go:351:3: SA4006: this value of `spendableCoins` is never used (staticcheck)
+		spendableCoins = spendableCoins.Sub(fees)
+		^
+custom/auth/module.go:31:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//____________________________________________________________________________
+^
+x/wasm/module.go:92:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//___________________________
+^
+x/wasm/module.go:174:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//____________________________________________________________________________
+^
+x/treasury/keeper/keeper.go:270:53: captLocal: `TR' should not be capitalized (gocritic)
+func (k Keeper) SetTR(ctx sdk.Context, epoch int64, TR sdk.Dec) {
+                                                    ^
+x/treasury/keeper/keeper.go:304:53: captLocal: `SR' should not be capitalized (gocritic)
+func (k Keeper) SetSR(ctx sdk.Context, epoch int64, SR sdk.Dec) {
+                                                    ^
+x/treasury/keeper/keeper.go:338:54: captLocal: `TSL' should not be capitalized (gocritic)
+func (k Keeper) SetTSL(ctx sdk.Context, epoch int64, TSL sdk.Int) {
+                                                     ^
+x/treasury/keeper/migrations.go:83: File is not `gofumpt`-ed (gofumpt)
+}
+x/treasury/keeper/indicator_test.go:151:6: func `linearFn` is unused (unused)
+func linearFn(_ sdk.Context, _ Keeper, epoch int64) sdk.Dec {
+     ^
+x/treasury/keeper/burn_account.go:19:2: S1023: redundant `return` statement (gosimple)
+	return
+	^
+x/treasury/keeper/keeper.go:167:2: S1023: redundant `return` statement (gosimple)
+	return
+	^
+x/treasury/keeper/querier_test.go:163:7: ineffectual assignment to err (ineffassign)
+	res, err = querier.Indicators(ctx, &types.QueryIndicatorsRequest{})
+	     ^
+x/treasury/keeper/legacy_querier.go:57:2: SA4006: this value of `err` is never used (staticcheck)
+	pageRes, err := query.FilteredPaginate(sub, params.Pagination, func(key []byte, value []byte, accumulate bool) (bool, error) {
+	^
+x/oracle/types/hash_test.go:25:18: dupArg: suspicious method call with the same argument and receiver (gocritic)
+	require.True(t, aggregateVoteHash.Equal(aggregateVoteHash))
+	                ^
+x/oracle/types/ballot_test.go:222:21: unnecessary conversion (unconvert)
+				sdk.NewDec(int64(input)),
+				                ^
+x/oracle/types/params_test.go:88:8: S1004: should use bytes.Equal(types.KeyVotePeriod, pair.Key) instead (gosimple)
+		case bytes.Compare(types.KeyVotePeriod, pair.Key) == 0 ||
+		     ^
+x/oracle/types/params_test.go:89:4: S1004: should use bytes.Equal(types.KeyRewardDistributionWindow, pair.Key) instead (gosimple)
+			bytes.Compare(types.KeyRewardDistributionWindow, pair.Key) == 0 ||
+			^
+x/oracle/types/params_test.go:90:4: S1004: should use bytes.Equal(types.KeySlashWindow, pair.Key) instead (gosimple)
+			bytes.Compare(types.KeySlashWindow, pair.Key) == 0:
+			^
+x/oracle/types/params_test.go:94:8: S1004: should use bytes.Equal(types.KeyVoteThreshold, pair.Key) instead (gosimple)
+		case bytes.Compare(types.KeyVoteThreshold, pair.Key) == 0:
+		     ^
+x/oracle/types/params_test.go:99:8: S1004: should use bytes.Equal(types.KeyRewardBand, pair.Key) instead (gosimple)
+		case bytes.Compare(types.KeyRewardBand, pair.Key) == 0 ||
+		     ^
+x/oracle/types/params_test.go:100:4: S1004: should use bytes.Equal(types.KeySlashFraction, pair.Key) instead (gosimple)
+			bytes.Compare(types.KeySlashFraction, pair.Key) == 0 ||
+			^
+x/oracle/types/params_test.go:101:4: S1004: should use bytes.Equal(types.KeyMinValidPerWindow, pair.Key) instead (gosimple)
+			bytes.Compare(types.KeyMinValidPerWindow, pair.Key) == 0:
+			^
+x/oracle/types/params_test.go:106:8: S1004: should use bytes.Equal(types.KeyWhitelist, pair.Key) instead (gosimple)
+		case bytes.Compare(types.KeyWhitelist, pair.Key) == 0:
+		     ^
+x/wasm/keeper/connector.go:162:2: naked return in func `dispatchMessage` with 41 lines of code (nakedret)
+	return
+	^
+x/wasm/keeper/legacy_querier.go:142:2: naked return in func `queryContractStore` with 37 lines of code (nakedret)
+	return
+	^
+x/wasm/keeper/querier.go:125:2: naked return in func `ContractStore` with 48 lines of code (nakedret)
+	return
+	^
+x/wasm/keeper/custom_test.go:429:2: naked return in func `setupMakerContract` with 31 lines of code (nakedret)
+	return
+	^
+x/wasm/keeper/custom_test.go:462:2: naked return in func `setupBindingsTesterContract` with 31 lines of code (nakedret)
+	return
+	^
+x/wasm/keeper/submsg_test.go:472:18: var-declaration: should drop = 0 from declaration of var id; it is the zero value (revive)
+	var id uint64 = 0
+	                ^
+x/wasm/keeper/legacy_querier_test.go:94:92: unnecessary conversion (unconvert)
+	_, err = querier(ctx, []string{types.QueryGetContractInfo}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                          ^
+x/wasm/keeper/legacy_querier_test.go:158:95: unnecessary conversion (unconvert)
+			res, err := querier(ctx, []string{types.QueryContractStore}, abci.RequestQuery{Data: []byte(bz)})
+			                                                                                           ^
+x/wasm/keeper/legacy_querier_test.go:59:88: unnecessary conversion (unconvert)
+	res, err := querier(ctx, []string{types.QueryRawStore}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                      ^
+x/wasm/keeper/legacy_querier_test.go:67:87: unnecessary conversion (unconvert)
+	res, err = querier(ctx, []string{types.QueryRawStore}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                     ^
+x/wasm/keeper/legacy_querier_test.go:75:92: unnecessary conversion (unconvert)
+	res, err = querier(ctx, []string{types.QueryContractStore}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                          ^
+x/wasm/keeper/legacy_querier_test.go:83:90: unnecessary conversion (unconvert)
+	_, err = querier(ctx, []string{types.QueryContractStore}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                        ^
+x/wasm/keeper/legacy_querier_test.go:87:88: unnecessary conversion (unconvert)
+	_, err = querier(ctx, []string{types.QueryGetByteCode}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                      ^
+x/wasm/keeper/legacy_querier_test.go:90:88: unnecessary conversion (unconvert)
+	_, err = querier(ctx, []string{types.QueryGetCodeInfo}, abci.RequestQuery{Data: []byte(bz)})
+	                                                                                      ^
+x/wasm/keeper/recursive_test.go:245:93: unnecessary conversion (unconvert)
+				_, err = querier(ctx, []string{types.QueryContractStore}, abci.RequestQuery{Data: []byte(bz)})
+				                                                                                        ^
+x/wasm/keeper/recursive_test.go:250:93: unnecessary conversion (unconvert)
+				_, err = querier(ctx, []string{types.QueryContractStore}, abci.RequestQuery{Data: []byte(bz)})
+				                                                                                        ^
+x/wasm/keeper/staking_test.go:585:59: unnecessary conversion (unconvert)
+	pkAny, _ := codectypes.NewAnyWithValue(cryptotypes.PubKey(simapp.CreateTestPubKeys(1)[0]))
+	                                                         ^
+x/wasm/keeper/reflect_test.go:379:6: type `reflectCustomMsg` is unused (unused)
+type reflectCustomMsg struct {
+     ^
+x/wasm/keeper/reflect_test.go:386:6: func `toMaskRawMsg` is unused (unused)
+func toMaskRawMsg(cdc codec.Codec, msg sdk.Msg) (wasmvmtypes.CosmosMsg, error) {
+     ^
+x/wasm/keeper/custom_test.go:60:6: type `simulateResponse` is unused (unused)
+type simulateResponse struct {
+     ^
+x/wasm/keeper/test_utils.go:117:2: var `valPubKeys` is unused (unused)
+	valPubKeys = simapp.CreateTestPubKeys(5)
+	^
+x/wasm/keeper/contract_test.go:229:10: S1012: should use `time.Since` instead of `time.Now().Sub` (gosimple)
+	diff := time.Now().Sub(start)
+	        ^
+x/wasm/keeper/contract_test.go:220:2: ineffectual assignment to res (ineffassign)
+	res, err := keeper.ExecuteContract(trialCtx, addr, creator, []byte(`{"release":{}}`), nil)
+	^
+x/wasm/keeper/custom_test.go:136:10: ineffectual assignment to err (ineffassign)
+	initBz, err := json.Marshal(&initMsg)
+	        ^
+x/wasm/keeper/custom_test.go:161:19: ineffectual assignment to err (ineffassign)
+	retCoin, spread, err := marketKeeper.ComputeSwap(input.Ctx, offerCoin, core.MicroLunaDenom)
+	                 ^
+x/wasm/keeper/custom_test.go:289:19: ineffectual assignment to err (ineffassign)
+	retCoin, spread, err := input.MarketKeeper.ComputeSwap(input.Ctx, offerCoin, core.MicroLunaDenom)
+	                 ^
+x/wasm/keeper/custom_test.go:297:6: ineffectual assignment to err (ineffassign)
+	bz, err := json.Marshal(&buyMsg)
+	    ^
+x/wasm/keeper/custom_test.go:318:19: ineffectual assignment to err (ineffassign)
+	retCoin, spread, err := input.MarketKeeper.ComputeSwap(input.Ctx, offerCoin, core.MicroLunaDenom)
+	                 ^
+x/wasm/keeper/custom_test.go:328:6: ineffectual assignment to err (ineffassign)
+	bz, err := json.Marshal(&buyMsg)
+	    ^
+x/wasm/keeper/custom_test.go:348:19: ineffectual assignment to err (ineffassign)
+	retCoin, spread, err := input.MarketKeeper.ComputeSwap(input.Ctx, sellCoin, core.MicroSDRDenom)
+	                 ^
+x/wasm/keeper/custom_test.go:356:6: ineffectual assignment to err (ineffassign)
+	bz, err := json.Marshal(&sellMsg)
+	    ^
+x/wasm/keeper/custom_test.go:386:6: ineffectual assignment to err (ineffassign)
+	bz, err := json.Marshal(&sendMsg)
+	    ^
+x/wasm/keeper/custom_test.go:424:10: ineffectual assignment to err (ineffassign)
+	initBz, err := json.Marshal(&initMsg)
+	        ^
+x/wasm/keeper/custom_test.go:457:10: ineffectual assignment to err (ineffassign)
+	initBz, err := json.Marshal(&EmptyStruct{})
+	        ^
+x/wasm/keeper/legacy_querier_test.go:86:6: ineffectual assignment to err (ineffassign)
+	bz, err = input.Cdc.MarshalJSON(types.NewQueryCodeIDParams(contractID))
+	    ^
+x/wasm/keeper/legacy_querier_test.go:93:6: ineffectual assignment to err (ineffassign)
+	bz, err = input.Cdc.MarshalJSON(types.NewQueryContractAddressParams(addr))
+	    ^
+x/wasm/keeper/msg_server_test.go:73:11: ineffectual assignment to err (ineffassign)
+	addr, _, err := keeper.InstantiateContract(ctx, codeID, creator, sdk.AccAddress{}, initMsgBz, nil)
+	         ^
+x/wasm/keeper/msg_server_test.go:108:11: ineffectual assignment to err (ineffassign)
+	addr, _, err := keeper.InstantiateContract(ctx, codeID, creator, sdk.AccAddress{}, initMsgBz, nil)
+	         ^
+x/wasm/keeper/reflect_test.go:215:17: ineffectual assignment to err (ineffassign)
+	protoQueryBin, err := proto.Marshal(&protoQuery)
+	               ^
+x/wasm/keeper/ioutil.go:7:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/bench_test.go:4:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/contract_test.go:6:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/custom_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/ioutil_test.go:8:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/legacy_querier_test.go:6:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/msg_server_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/querier_test.go:6:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/recursive_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/reflect_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/reflect_test.go:8:2: SA1019: "github.com/golang/protobuf/proto" is deprecated: Use the "google.golang.org/protobuf/proto" package instead. (staticcheck)
+	"github.com/golang/protobuf/proto"
+	^
+x/wasm/keeper/staking_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/submsg_test.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/keeper/submsg_test.go:9:2: SA1019: "github.com/golang/protobuf/proto" is deprecated: Use the "google.golang.org/protobuf/proto" package instead. (staticcheck)
+	"github.com/golang/protobuf/proto"
+	^
+x/wasm/keeper/contract.go:474:57: SA1029: should not use built-in type string as key for value; define your own type to avoid collisions (staticcheck)
+	ctx = ctx.WithContext(context.WithValue(ctx.Context(), types.WasmVMQueryDepthContextKey, queryDepth+1))
+	                                                       ^
+x/oracle/simulation/operations.go:33:14: var-declaration: should omit type map[string]string from declaration of var voteHashMap; it will be inferred from the right-hand side (revive)
+	voteHashMap map[string]string = make(map[string]string)
+	            ^
+cmd/terrad/genaccounts.go:61:11: sloppyTypeAssert: type assertion from/to types are identical (gocritic)
+			cdc := depCdc.(codec.Codec)
+			       ^
+cmd/terrad/testnet.go:385:15: badCall: suspicious Join on 1 argument (gocritic)
+	writePath := filepath.Join(dir)
+	             ^
+cmd/terrad/root.go:48:2: SA1019: sdkConfig.SetFullFundraiserPath is deprecated: This method is supported for backward compatibility only and will be removed in a future release. Use SetPurpose and SetCoinType instead. (staticcheck)
+	sdkConfig.SetFullFundraiserPath(core.FullFundraiserPath)
+	^
+cmd/terrad/testnet.go:182:24: SA1019: server.GenerateSaveCoinKey is deprecated: GenerateSaveCoinKey generates a new key mnemonic with its addrress. If mnemonic is provided then it's used for key generation. The key is saved in the keyring. The function returns error if overwrite=true and the key already exists. Please use testutils.GenerateSaveCoinKey instead. (staticcheck)
+		addr, secret, err := server.GenerateSaveCoinKey(kb, nodeDirName, true, algo)
+		                     ^
+custom/gov/wasm/interface.go:17:6: exported: type name will be used as wasm.WasmMsgParser by other packages, and that stutters; consider calling this MsgParser (revive)
+type WasmMsgParser struct{}
+     ^
+x/treasury/module.go:177:1: commentFormatting: put a space between `//` and comment text (gocritic)
+//____________________________________________________________________________
+^
+custom/auth/client/rest/broadcast.go:6:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+custom/auth/client/rest/encode.go:5:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+custom/auth/client/rest/broadcast.go:92:33: ST1005: error strings should not be capitalized (stylecheck)
+			rest.CheckBadRequestError(w, errors.New("Must provide each signers's sequence number"))
+			                             ^
+custom/auth/client/rest/encode.go:89:33: ST1005: error strings should not be capitalized (stylecheck)
+			rest.CheckBadRequestError(w, errors.New("Must provide each signers's sequence number"))
+			                             ^
+x/wasm/client/cli/tx.go:97:4: ifElseChain: rewrite if-else to switch statement (gocritic)
+			if codeID, err := cmd.Flags().GetUint64(flagMigrateCodeID); err != nil {
+			^
+x/wasm/client/cli/query.go:21:7: const `flagRaw` is unused (unused)
+const flagRaw = "raw"
+      ^
+x/wasm/client/cli/query.go:9:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+x/wasm/client/cli/tx.go:7:2: SA1019: "io/ioutil" has been deprecated since Go 1.16: As of Go 1.16, the same functionality is now provided by package io or package os, and those implementations should be preferred in new code. See the specific function documentation for details. (staticcheck)
+	"io/ioutil"
+	^
+custom/staking/wasm/interface.go:24:6: exported: type name will be used as wasm.WasmMsgParser by other packages, and that stutters; consider calling this MsgParser (revive)
+type WasmMsgParser struct{}
+     ^
+custom/staking/wasm/interface.go:112:6: exported: type name will be used as wasm.WasmQuerier by other packages, and that stutters; consider calling this Querier (revive)
+type WasmQuerier struct {
+     ^
+custom/distribution/module.go:22:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+custom/staking/module.go:25:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+custom/evidence/module.go:22:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+x/oracle/client/rest/rest.go:10:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+types/assets/assets.go:3:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/wasm/types/params.go:49:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/treasury/types/params.go:82:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/wasm/exported/alias.go:1:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/wasm/legacy/v04/types.go:2:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/oracle/keeper/test_utils.go:1:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+custom/slashing/module.go:22:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+types/util/blocks.go:7:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+custom/gov/module.go:31:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+x/oracle/types/test_utils.go:1:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+custom/crisis/module.go:25:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+x/treasury/legacy/v04/types.go:2:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+custom/auth/module.go:28:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+x/treasury/keeper/test_utils.go:1:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/market/exported/alias.go:3:1: directive `//nolint:deadcode,unused` is unused for linter "unused" (nolintlint)
+//nolint:deadcode,unused
+^
+x/oracle/exported/alias.go:3:1: directive `//nolint:deadcode,unused` is unused for linter "unused" (nolintlint)
+//nolint:deadcode,unused
+^
+x/market/legacy/v04/types.go:2:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/treasury/exported/alias.go:3:1: directive `//nolint:deadcode,unused` is unused for linter "unused" (nolintlint)
+//nolint:deadcode,unused
+^
+custom/bank/module.go:35:44: directive `// nolint` is unused (nolintlint)
+	*types.ModuleCdc = *customtypes.ModuleCdc // nolint
+	                                          ^
+custom/auth/legacy/v039/types.go:4:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
+x/oracle/legacy/v04/types.go:2:1: directive `// nolint` is unused (nolintlint)
+// nolint
+^
