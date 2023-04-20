@@ -1,1 +1,31 @@
 
+### Testnet Upgrade Guide
+
+The L1 team is about to release the v2.0.0 of the terrad validator client software. The upgrade contains the bump to Cosmos-SDK v.0.45.x. In order to be sure that the Upgrade on the **columbus-5** mainnet goes as smoothly as possible, we would request all validators to join the **maquis-1** testnet.
+
+NOTE: The **maquis-1** testnet has still to be set up.
+
+#### Please, Join the Testnet
+
+The **maquis-1** testnet was set up solely for the purpose of doing the upgrade test in advance of a mainnet upgrade. Please use the following network parameters:
+
+- genesis.json
+- addrbook.json
+
+NOTE: These still have to be generated and announced
+
+#### Software Upgrade Proposal on the Testnet
+
+TBD
+
+#### Backup Existing Store
+
+TBD
+
+#### Upgrade the `terrad` Binary
+
+TBD
+
+#### Emergency
+
+TBD
