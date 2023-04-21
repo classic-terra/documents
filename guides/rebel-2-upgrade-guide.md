@@ -12,9 +12,11 @@ Please use the following network parameters to join the `rebel-2` network:
 
 NOTE: We cannot give you an guide how to join the testnet exactly or what your local setup has to be in order to join that net. The purpose of this initiative is to test the upgrade with an validatorset and in an environment that is as close as possible to the `columbus-5` mainnet. We would prefer that the validators would join the `rebel-2` network with a setup that is similar to the one that they use for the `columbus-5`.
 
+If validators need larger amount of testnet tokens, then they can reach out to Edward Kim or the L1 team in the Validator Discord channel. Please tag @ek826#9351 or @fragwuerdig#4755. These two persons can send testnet tokens. Smaller amounts of testnet tokens can be received from the [faucet](https://faucet.terrac.dev/).
+
 #### Software Upgrade Proposal on the Testnet
 
-TBD
+The L1 team is going to make an software upgrade proposal. The exact date of when the upgrade proposal is going to be submitted will be announced here. We kindly ask validators to vote on this proposal when they are asked to.
 
 #### Backup Existing Store
 
