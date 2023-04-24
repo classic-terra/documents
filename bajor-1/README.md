@@ -8,4 +8,6 @@ These are testnet parameters for v0.45.x upgrade API and GUI breakage testing:
 -   FCD [http://85.214.56.241:3060](http://85.214.56.241:3060)
 -   Swagger [http://85.214.56.241:1317/swagger/#](http://85.214.56.241:1317/swagger/#)
 
-Note `http` protocol being used. For Interchain Station to work with these parameters you are going to have to set up an `https` capable proxy. 
+Note `http` protocol being used. For Interchain Station to work with these parameters you are going to have to set up an `https` capable proxy. This is a `https` capable proxy (but support for this is subject to change):
+
+-   https://test-lcd.lunc.foundation/node_info
