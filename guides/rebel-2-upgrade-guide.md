@@ -33,6 +33,6 @@ At the time when the chain comes to a halt it is **highly adviced** to make a ba
 This timeline may be refined as the initiative goes on:
 
 - **22nd of April**: The announcement an Invitation in the Validators Discord Channel.
-- **22nd ~ 29th of April**: Onboarding period for validators. In this time the L1 team will give out testnet tokens to validators so they can self-bond and join the testnet
-- **29th April ~ 2nd of March**: Delivery of the chain halt upgrade proposal. Voting period.
-- **2nd of March**: Chain halt and upgrade process.
+- **22nd ~ 5th of May**: Onboarding period for validators. In this time the L1 team will give out testnet tokens to validators so they can self-bond and join the testnet
+- **5th May ~ 8th of May**: Delivery of the chain halt upgrade proposal. Voting period.
+- **9th of May**: Chain halt and test upgrade process.
