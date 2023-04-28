@@ -1,7 +1,7 @@
 {
   "genesis_time": "2023-04-25T08:56:29.527621231Z",
   "chain_id": "bajor-1",
-  "initial_height": "1",
+  "initial_height": "12500001",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -244,13 +244,13 @@
         "min_deposit": [
           {
             "denom": "uluna",
-            "amount": "10000000"
+            "amount": "1000000"
           }
         ],
-        "max_deposit_period": "172800s"
+        "max_deposit_period": "1200s"
       },
       "voting_params": {
-        "voting_period": "172800s"
+        "voting_period": "1200s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -362,7 +362,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "1200s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
@@ -387,35 +387,217 @@
     "treasury": {
       "params": {
         "tax_policy": {
-          "rate_min": "0.000500000000000000",
-          "rate_max": "0.010000000000000000",
+          "rate_min": "0.002000000000000000",
+          "rate_max": "0.002000000000000000",
           "cap": {
             "denom": "usdr",
-            "amount": "1000000"
+            "amount": "60000000000000000"
           },
-          "change_rate_max": "0.000250000000000000"
+          "change_rate_max": "0.000000000000000000"
         },
         "reward_policy": {
-          "rate_min": "0.050000000000000000",
-          "rate_max": "0.500000000000000000",
+          "rate_min": "1.000000000000000000",
+          "rate_max": "1.000000000000000000",
           "cap": {
             "denom": "unused",
             "amount": "0"
           },
-          "change_rate_max": "0.025000000000000000"
+          "change_rate_max": "0.000000000000000000"
         },
         "seigniorage_burden_target": "0.670000000000000000",
         "mining_increment": "1.070000000000000000",
         "window_short": "4",
         "window_long": "52",
-        "window_probation": "12",
+        "window_probation": "18",
         "burn_tax_split": "0.100000000000000000",
         "min_initial_deposit_ratio": "0.000000000000000000"
       },
-      "tax_rate": "0.001000000000000000",
-      "reward_weight": "0.050000000000000000",
-      "tax_caps": [],
-      "tax_proceeds": [],
+      "tax_rate": "0.002000000000000000",
+      "reward_weight": "1.000000000000000000",
+      "tax_caps": [
+    {
+      "denom": "uaud",
+      "tax_cap": "121203779152994420"
+    },
+    {
+      "denom": "ucad",
+      "tax_cap": "109841609949069733"
+    },
+    {
+      "denom": "uchf",
+      "tax_cap": "71998567101510812"
+    },
+    {
+      "denom": "ucny",
+      "tax_cap": "559790249696599896"
+    },
+    {
+      "denom": "udkk",
+      "tax_cap": "547150947828163108"
+    },
+    {
+      "denom": "ueur",
+      "tax_cap": "73410160424198227"
+    },
+    {
+      "denom": "ugbp",
+      "tax_cap": "64956596109851138"
+    },
+    {
+      "denom": "uhkd",
+      "tax_cap": "637167643975458609"
+    },
+    {
+      "denom": "uidr",
+      "tax_cap": "1211534376022283648354"
+    },
+    {
+      "denom": "uinr",
+      "tax_cap": "6651992267654351981"
+    },
+    {
+      "denom": "ujpy",
+      "tax_cap": "10901243127331248190"
+    },
+    {
+      "denom": "ukrw",
+      "tax_cap": "108216471386903163014"
+    },
+    {
+      "denom": "umnt",
+      "tax_cap": "283150923883671186971"
+    },
+    {
+      "denom": "umyr",
+      "tax_cap": "359784080463976359"
+    },
+    {
+      "denom": "unok",
+      "tax_cap": "853920990748915243"
+    },
+    {
+      "denom": "uphp",
+      "tax_cap": "4514865578842200002"
+    },
+    {
+      "denom": "usdr",
+      "tax_cap": "1000000"
+    },
+    {
+      "denom": "usek",
+      "tax_cap": "831601577040533026"
+    },
+    {
+      "denom": "usgd",
+      "tax_cap": "108194954062725586"
+    },
+    {
+      "denom": "uthb",
+      "tax_cap": "2784835223637722833"
+    },
+    {
+      "denom": "utwd",
+      "tax_cap": "2487767933837181968"
+    },
+    {
+      "denom": "uusd",
+      "tax_cap": "81196049622499756"
+    }
+  ],
+      "tax_proceeds": [
+    {
+      "denom": "uaud",
+      "amount": "2026"
+    },
+    {
+      "denom": "ucad",
+      "amount": "476"
+    },
+    {
+      "denom": "uchf",
+      "amount": "1315"
+    },
+    {
+      "denom": "ucny",
+      "amount": "4989"
+    },
+    {
+      "denom": "udkk",
+      "amount": "378"
+    },
+    {
+      "denom": "ueur",
+      "amount": "2323"
+    },
+    {
+      "denom": "ugbp",
+      "amount": "744"
+    },
+    {
+      "denom": "uhkd",
+      "amount": "339"
+    },
+    {
+      "denom": "uidr",
+      "amount": "14229531"
+    },
+    {
+      "denom": "uinr",
+      "amount": "2401"
+    },
+    {
+      "denom": "ujpy",
+      "amount": "43260"
+    },
+    {
+      "denom": "ukrw",
+      "amount": "1996244237"
+    },
+    {
+      "denom": "uluna",
+      "amount": "94714626109743"
+    },
+    {
+      "denom": "umnt",
+      "amount": "7949575"
+    },
+    {
+      "denom": "umyr",
+      "amount": "31829"
+    },
+    {
+      "denom": "unok",
+      "amount": "1043"
+    },
+    {
+      "denom": "uphp",
+      "amount": "2002"
+    },
+    {
+      "denom": "usdr",
+      "amount": "1298"
+    },
+    {
+      "denom": "usek",
+      "amount": "11585"
+    },
+    {
+      "denom": "usgd",
+      "amount": "3"
+    },
+    {
+      "denom": "uthb",
+      "amount": "15597"
+    },
+    {
+      "denom": "utwd",
+      "amount": "2153"
+    },
+    {
+      "denom": "uusd",
+      "amount": "94556912639"
+    }
+  ],
       "epoch_initial_issuance": [],
       "epoch_states": []
     },
