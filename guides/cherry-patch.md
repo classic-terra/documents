@@ -2,6 +2,8 @@
 
 This guide addresses: https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2023-002.md
 
+**WARNING: GO VERSION MUST BE 1.18**
+
 ```sh
 
 #!/bin/sh
