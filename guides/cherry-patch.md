@@ -15,10 +15,9 @@ go mod edit -replace github.com/CosmWasm/wasmvm=github.com/classic-terra/wasmvm@
 go mod tidy
 make install
 
-TERRAD_API_ENABLE=true terrad start --home ~/.terra --pruning everything
-
+terrad version --long | grep github.com/CosmWasm/wasmvm
 ```
 
-Enabled LCD temporarily on your node to check, this should be outcome when running: `curl http://localhost:1317/node_info | jq '.application_version.build_deps' | grep 'wasmvm'`
+this should be outcome when running check
 
 "github.com/CosmWasm/wasmvm@v0.16.7 => github.com/classic-terra/wasmvm@v0.16.8-beta5"
