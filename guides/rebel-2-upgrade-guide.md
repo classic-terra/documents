@@ -10,6 +10,7 @@ Please use the following network parameters to join the `rebel-2` network:
 - [genesis.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/genesis.json)
 - [addrbook.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/addrbook.json)
 - [archive snapshot (21.04.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-21-04-2023.tar)
+- [post-upgrade archive snapshot (17.05.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-17-05-2023.tar)
 - [v1.1.0](https://github.com/classic-terra/core/archive/refs/tags/v1.1.0.tar.gz) of the `terrad` client
 - We kindly ask you to use the `main` branch of the following oracle feeder: [here](https://github.com/classic-terra/oracle-feeder)
 - for the oracle feeder please use the following version: `git checkout 81c450d36c3d64fd4d9167bc5ef8c49ce9ad104a`
