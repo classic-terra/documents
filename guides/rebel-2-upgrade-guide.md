@@ -29,7 +29,9 @@ If validators need larger amount of testnet tokens, then they can reach out to E
 
 ### For smart contract providers
 
-You can join the testnet with your smart contract(s) by simply pointing your environment and `terrad` client to the above mentioned endpoints. This can either be done by providing tge `--node` option to `terrad` or modifying the `.terra/config/client.toml`
+You can join the testnet with your smart contract(s) by simply pointing your environment and `terrad` client to the above mentioned endpoints. This can either be done by providing tge `--node` option to `terrad` or modifying the `.terra/config/client.toml`.
+
+After doing so upload your code and instatiate your contract using the `terrad` client.
 
 #### Software Upgrade Proposal on the Testnet
 
