@@ -1,7 +1,7 @@
 
 ### Testnet Upgrade Guide
 
-The L1 team is about to release the v2.1.0 of the terrad validator client software. The upgrade removes the legacy `x/wasm` module from Terra Classic and introduces a forked version of  the canonical `wasmd` module `v0.30.0`, which can be found [here](https://github.com/classic-terra/wasmd). The upgrade comes binfled with
+The L1 team is about to release the v2.1.0 of the terrad validator client software. The upgrade removes the legacy `x/wasm` module from Terra Classic and introduces a forked version of  the canonical `wasmd` module `v0.30.0`, which can be found [here](https://github.com/classic-terra/wasmd). The upgrade comes bundled with
 
 - wasmvm v1.1.0
 - new wasm related governance proposals
