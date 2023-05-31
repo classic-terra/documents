@@ -1,6 +1,6 @@
 # Upgrade Guide for `rebel-2` Testnet
 
-The `v2.1.0` upgrade happens via chain halt upgrade on May 31st 2022. All `terrad` clients are going to exit on block height `14584970` and expect upgrade name `v4` to be started as replacement. The following steps should be applied by all testnet validators: 
+The `v2.1.0` upgrade happens via chain halt upgrade on May 31st 2023. All `terrad` clients are going to exit on block height `14584970` and expect upgrade name `v4` to be started as replacement. The following steps should be applied by all testnet validators: 
 
 ## Installation
 
