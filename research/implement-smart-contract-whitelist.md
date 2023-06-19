@@ -23,7 +23,7 @@ This function would then be used in the corresponding ante handler (specifically
 
 ## Edge Case
 
-The above mentioned concept is the most efficient I can think of in terms of "amount of coding and changes in the underlying param store". However, the concept has one rare edge case: If we community decides to whitelist execution on two different smart contract addresses then these two smart contracts are *automatically* "binance whitelisted" for MsgSend between those two.
+The above mentioned concept is the most efficient I can think of in terms of "amount of coding and changes in the underlying param store". However, the concept has one rare edge case: If the community decides to whitelist execution on two different smart contract addresses then these two smart contracts are *automatically* "binance whitelisted" for `MsgSend` between those two.
 
 ## Disclaimer
 
