@@ -25,7 +25,7 @@ Using the fact that $A \cdot B = k$ we arrive at:
 
 $$ E_{BA} := \frac{\Delta B}{\Delta A} = \frac{B}{ A + \Delta A}$$
 
-So we worked out what exchange rate that the trader gets. If we assume that $\Delta A$ is extremely small in comparison to $A$ and $B$ then we can even further simplify:
+So we worked out what exchange rate that the trader gets. Let's assume that $\Delta A$ is extremely small in comparison to $A$ and $B$. This is the equivalent of saying that the liquidity in the pool is *deep* in comparison to the swap volume. In this case we can even further simplify:
 
 $$ E_{BA,\infty} = \frac{B}{A}$$
 
