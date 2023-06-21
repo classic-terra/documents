@@ -23,14 +23,21 @@ $$ k = A \cdot B  - A \cdot \Delta B + B \cdot \Delta A - \Delta A \cdot \Delta 
 
 Using the fact that $A \cdot B = k$ we arrive at:
 
-$$ E_{BA} := \frac{\Delta B}{\Delta A} = \frac{B}{ A + \Delta A}$$
+$$ E_{AB} := \frac{\Delta B}{\Delta A} = \frac{B}{ A + \Delta A}$$
 
 So we worked out what exchange rate that the trader gets. Let's assume that $\Delta A$ is extremely small in comparison to $A$ and $B$. This is the equivalent of saying that the liquidity in the pool is *deep* in comparison to the swap volume. In this case we can even further simplify:
 
-$$ E_{BA,\infty} = \frac{B}{A}$$
+$$ E_{AB,\infty} = \frac{B}{A}$$
 
-And here we also see immediately why the constant product curve was a good choice to determine the exchange rate in the first place: It simply makes the exchange rate ending up as being proportional to the balance of $B$ versus $A$ in the pool. This reflects two fundamental aspects of pricing: Demand and Supply. Many traders swapping $A$ against $B$? This means the pool tends to have excess balance towards $B$. This in turn means $E_{BA,\infty}$ rises, which means "I can get more $B$ out of the same amount of $A$". Which is the equivalent of saying: "The coin $B$ is less valuable compared to $A$" or "The price of $B$ falls".
+And here we also see immediately why the constant product curve was a good choice to determine the exchange rate in the first place: It simply makes the exchange rate ending up as being proportional to the balance of $B$ versus $A$ in the pool. This reflects two fundamental aspects of pricing: Demand and Supply. Many traders swapping $A$ against $B$? This means the pool tends to have excess balance towards $B$. This in turn means $E_{AB,\infty}$ rises, which means "I can get more $B$ out of the same amount of $A$". Which is the equivalent of saying: "The coin $B$ is less valuable compared to $A$" or "The price of $B$ falls".
 
-You may have noticed that of course $E_{BA} \le E_{BA,\infty}$. Thus, the ratio $E_{BA}$ over $E_{BA,\infty}$ is a real number between $0$ and $1$. Meaning, that the trader can only get the best price when the liquidity in the pool is infinitely large. If the pools liquidity is shallow, then the trader gets less for his input. The discrepancy is called *slippage*. We define and workout the slippage as:
+You may have noticed that of course $E_{AB} \le E_{AB,\infty}$. Thus, the ratio $E_{BA}$ over $E_{BA,\infty}$ is a real number between $0$ and $1$. Meaning, that the trader can only get the best price when the liquidity in the pool is infinitely large. If the pools liquidity is shallow, then the trader gets less for his input. The discrepancy is called *slippage*. We define and workout the slippage as:
 
-$$ S = 1 - \frac{ E_{BA} }{ E_{BA,\infty} } = 1 - \frac{A}{A + \Delta A} $$
+$$ S_{AB} = 1 - \frac{ E_{AB} }{ E_{AB,\infty} } = 1 - \frac{A}{A + \Delta A} $$
+
+### Pool Delta
+
+$A$ and $B$ are not independent variables. Over the liquidity constant $k$ they are ulitmately entangled. Let's assume we have a pool that starts out with $A$ and $B$ being available in a $1$ to $1$ ratio. A trader comes in a either puts in $\Delta A$ in or takes it out of the pool. So he will disbalance the pool. Let's express the amount of $A$ in the pool as the amount $A = a + \delta$, where $a$ is the amount of $A$ tokens if the pool is balanced $1$ to $1$ (so-called *base pool*). This implies:
+
+$$ A = a + \delta $$
+$$ B = \frac{k}{a + \delta} $$
