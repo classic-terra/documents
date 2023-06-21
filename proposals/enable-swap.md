@@ -37,7 +37,7 @@ $$ S_{AB} = 1 - \frac{ E_{AB} }{ E_{AB,\infty} } = 1 - \frac{A}{A + \Delta A} $$
 
 ### Pool Delta
 
-$A$ and $B$ are not independent variables. Over the liquidity constant $k$ they are ulitmately entangled. Let's assume we have a pool that starts out with $A$ and $B$ being available in a $1$ to $1$ ratio. A trader comes in a either puts in $\Delta A$ in or takes it out of the pool. So he will disbalance the pool. Let's express the amount of $A$ in the pool as the amount $A = a + \delta$, where $a$ is the amount of $A$ tokens if the pool is balanced $1$ to $1$ (so-called *base pool*). This implies:
+$A$ and $B$ are not independent variables. Over the liquidity constant $k$ they are ulitmately entangled. Let's assume we have a pool that starts out with $A$ and $B$ being available in a $1$ to $1$ ratio. A trader comes in a either puts in $\Delta A$ in or takes it out of the pool. So he will disbalance the pool. Let's express the amount of $A$ in the pool as the amount $A = a + \delta$, where $a$ is the amount of $A$ tokens if the pool is balanced $1$ to $1$ (so-called *base pool*). This implies that we can rebase all above given formulas as solely being dependent on the *base pool* and *pool delta*:
 
 $$ A = a + \delta $$
 
