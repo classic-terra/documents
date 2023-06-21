@@ -31,4 +31,6 @@ $$ E_{BA,\infty} = \frac{B}{A}$$
 
 And here we also see immediately why the constant product curve was a good choice to determine the exchange rate in the first place: It simply makes the exchange rate ending up as being proportional to the balance of $B$ versus $A$ in the pool. This reflects two fundamental aspects of pricing: Demand and Supply. Many traders swapping $A$ against $B$? This means the pool tends to have excess balance towards $B$. This in turn means $E_{BA,\infty}$ rises, which means "I can get more $B$ out of the same amount of $A$". Which is the equivalent of saying: "The coin $B$ is less valuable compared to $A$" or "The price of $B$ falls".
 
-You may have noticed that of course $E_{BA} \le E_{BA,\infty}$
+You may have noticed that of course $E_{BA} \le E_{BA,\infty}$. Thus, the ratio $E_{BA}$ over $E_{BA,\infty}$ is a real number between $0$ and $1$. Meaning, that the trader can only get the best price when the liquidity in the pool is infinitely large. If the pools liquidity is shallow, then the trader gets less for his input. The discrepancy is called *slippage*. We define and workout the slippage as:
+
+$$ S = 1 - \frac{ E_{BA} }{ E_{BA,\infty} } = 1 - \frac{A}{A + \Delta A} $$
