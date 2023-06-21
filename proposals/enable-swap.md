@@ -42,3 +42,9 @@ $A$ and $B$ are not independent variables. Over the liquidity constant $k$ they 
 $$ A = a + \delta $$
 
 $$ B = \frac{k}{a + \delta} $$
+
+$$ E_{AB,\infty} = \frac{k}{(a + \delta)^2} $$
+
+$$ E_{AB} = \frac{k}{(a + \delta)^2 + \Delta A (a + \delta)} $$
+
+$$ S_{AB} = 1 - \frac{a + \delta}{ a + \delta + \Delta A}
