@@ -37,14 +37,34 @@ $$ S_{AB} = 1 - \frac{ E_{AB} }{ E_{AB,\infty} } = 1 - \frac{A}{A + \Delta A} $$
 
 ### Pool Delta
 
-$A$ and $B$ are not independent variables. Over the liquidity constant $k$ they are ulitmately entangled. Let's assume we have a pool that starts out with $A$ and $B$ being available in a $1$ to $1$ ratio. A trader comes in a either puts in $\Delta A$ in or takes it out of the pool. So he will disbalance the pool. Let's express the amount of $A$ in the pool as the amount $A = a + \delta$, where $a$ is the amount of $A$ tokens if the pool is balanced $1$ to $1$ (so-called *base pool*). This implies that we can rebase all above given formulas as solely being dependent on the *base pool* and *pool delta*:
+$A$ and $B$ are not independent variables. Over the liquidity constant $k$ they are ulitmately entangled. Let's assume we have a pool that starts out with $A$ and $B$ being available in a $1$ to $1$ ratio. A trader comes in a either puts in $\Delta A$ in or takes it out of the pool. So he will disbalance the pool. Let's express the amount of $A$ in the pool as the amount $A = a + \delta$, where $a$ is the amount of $A$ tokens if the pool is balanced $1$ to $1$ (so-called *base pool*). This implies that we can rebase all above given formulas as solely being dependent on the *base pool* and *pool delta*. Notive also that per constant product the liquidity constant is determined to be $k = a^2$:
 
 $$ A = a + \delta $$
 
-$$ B = \frac{k}{a + \delta} $$
+$$ B = \frac{a^2}{a + \delta} $$
 
-$$ E_{AB,\infty} = \frac{k}{(a + \delta)^2} $$
+$$ E_{AB,\infty} = \frac{a^2}{(a + \delta)^2} $$
 
-$$ E_{AB} = \frac{k}{(a + \delta)^2 + \Delta A (a + \delta)} $$
+$$ E_{AB} = \frac{a^2}{(a + \delta)^2 + \Delta A (a + \delta)} $$
 
 $$ S_{AB} = 1 - \frac{a + \delta}{ a + \delta + \Delta A} $$
+
+### Introducing a Base Unit
+
+Ok. Let's go ahead and *not* measure $A$ and $B$ in "number of tokens" in the pool. In this very early stadium of crypto adoption fiat currencies play a very important role. We assign then tokens $A$ and $B$ a given price that is determined by free market mechanisms. We say the *price* $P_A$ is equivalent to the number of a base Unit $U_A$ *per* unit number of tokens $A$:
+
+$$ P_A = \frac{U_A}{A} $$
+
+Let's measure our base pool $a$ and our pool $\delta$ in base units (like e.g. dollar). This way we can express the number of tokens $A$ and $B$ in number of equivalent dollars (or whatever the base unit turns out to be):
+
+$$ U_A = a + \delta $$
+
+$$ U_B = \frac{a^2}{a + \delta} $$
+
+$$ E_{AB,\infty} = \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2} $$
+
+$$ E_{AB} =  \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2 + \Delta A (a + \delta)} $$
+
+$$ S_{AB} = 1 - \frac{a + \delta}{ a + \delta + P_A \Delta A} $$
+
+Notice how the exchange rates $E_AB$ now depend on the unit price of the respective tokens.
