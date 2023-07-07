@@ -67,4 +67,4 @@ $$ E_{AB} =  \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2 + \Delta A (a + \de
 
 $$ S_{AB} = 1 - \frac{a + \delta}{ a + \delta + P_A \Delta A} $$
 
-Notice how the exchange rates $E_AB$ now depend on the unit price of the respective tokens.
+Notice how the exchange rates $E_{AB}$ now depend on the unit price of the respective tokens.
