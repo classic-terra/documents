@@ -61,10 +61,37 @@ $$ U_A = a + \delta $$
 
 $$ U_B = \frac{a^2}{a + \delta} $$
 
-$$ E_{AB,\infty} = \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2} $$
+$$ E_{AB,\infty} = \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2}  $$
 
 $$ E_{AB} =  \frac{P_A}{P_B} \cdot \frac{a^2}{(a + \delta)^2 + \Delta A (a + \delta)} $$
 
 $$ S_{AB} = 1 - \frac{a + \delta}{ a + \delta + P_A \Delta A} $$
 
 Notice how the exchange rates $E_{AB}$ now depend on the unit price of the respective tokens.
+
+### The Market Module
+
+The above equations show us how a real Uniswap v2 pool works:
+
+- Liquidity providers provide liquidity for assets $A$ and $B$
+- Traders come in and take out $A$ to get $B$. By doing so they introduce a disbalance denoted by $\delta$
+- Traders experience a "spread" or "slippage" due to finite liquidity in the pool
+
+The market module is not a real v2 pool. It mimics some behavior of a v2 pool in order to provide the user liquidity for Terra->Luna swaps. Major similarities with a real v2 pool are:
+
+- We have finite liquidity behavior by charging the user a constant product spread
+- By swapping Terra for Luna traders disbalance the pool by $+\delta$ (and $-\delta$ vice versa)
+
+It's missing some crucial behavior. Major differences are:
+
+- There are no liquidity providers. The market module mints and burns swapped assets on demand.
+- The $\delta$ has a recovery period and always tends to recover to $\delta = 0$ over time
+- The spot price of the pool is dictaded by the oracle.
+
+To the last point: On each swap the pools virtual balance is always constructed such that the pools "deep liquidity" exchange rate matches the exchange rate as reported by the oracle. This makes totally sense: Note,how $E_{AB,\infty}$ matches the oracle exchange rate when $\delta$ approaches $0$. So when a trader comes across he/she will always experience the spot price as reported by the oracle. BUT: The market module will charge the trader a spread according to $E_{AB,infty}$ with the pool $delta$ applied from past swaps of recent swap history.
+
+Remember that the $\delta$ will recover over time. Under heavy market conditions we will expect to see $|\delta| >> 0$. Under those market cnditions the spread starts to rise. Which in turn will discourage traders from using the market module. Instead, they are going to relief selling pressure on the free market. Under light market conditions the $\delta$ will sit at $0$ most of the time. This encourages traders to use the module.
+
+
+
+
