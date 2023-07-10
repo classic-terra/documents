@@ -92,6 +92,19 @@ To the last point: On each swap the pools virtual balance is always constructed 
 
 Remember that the $\delta$ will recover over time. Under heavy market conditions we will expect to see $|\delta| >> 0$. Under those market cnditions the spread starts to rise. Which in turn will discourage traders from using the market module. Instead, they are going to relief selling pressure on the free market. Under light market conditions the $\delta$ will sit at $0$ most of the time. This encourages traders to use the module.
 
+## Market Module Parameters as Capital Control
 
+Let's have a look at the current parameter set of the market module:
 
+```
+$ terrad q market params
+params:
+  base_pool: "100000000000000.000000000000000000"
+  min_stability_spread: "1.000000000000000000"
+  pool_recovery_period: "18"
+```
+
+The base pool is measured in `usdr` unit. SDR is a virtual currency that is internationally accepted to measure currencies against. You can read up on details [here](https://www.imf.org/external/np/fin/data/rms_sdrv.aspx). The recovery period is measured in blocks. On each bloack end the $\delta$ is reduced by applying the following equation (where $h$ denotes the current block height and $r$ denotes the recovery period):
+
+$$ \delta_{h+1} = \delta_{h} \cdot ( 1 - \frac{1}{r}) $$
 
