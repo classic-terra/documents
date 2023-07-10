@@ -88,7 +88,7 @@ It's missing some crucial behavior. Major differences are:
 - The $\delta$ has a recovery period and always tends to recover to $\delta = 0$ over time
 - The spot price of the pool is dictaded by the oracle.
 
-To the last point: On each swap the pools virtual balance is always constructed such that the pools "deep liquidity" exchange rate matches the exchange rate as reported by the oracle. This makes totally sense: Note,how $E_{AB,\infty}$ matches the oracle exchange rate when $\delta$ approaches $0$. So when a trader comes across he/she will always experience the spot price as reported by the oracle. BUT: The market module will charge the trader a spread according to $E_{AB,infty}$ with the pool $delta$ applied from past swaps of recent swap history.
+To the last point: On each swap the pools virtual balance is always constructed such that the pools "deep liquidity" exchange rate matches the exchange rate as reported by the oracle. This makes totally sense: Note,how $E_{AB,\infty}$ matches the oracle exchange rate when $\delta$ approaches $0$. So when a trader comes across he/she will always experience the spot price as reported by the oracle. BUT: The market module will charge the trader a spread according to $E_{AB,\infty}$ with the pool $delta$ applied from past swaps of recent swap history.
 
 Remember that the $\delta$ will recover over time. Under heavy market conditions we will expect to see $|\delta| >> 0$. Under those market cnditions the spread starts to rise. Which in turn will discourage traders from using the market module. Instead, they are going to relief selling pressure on the free market. Under light market conditions the $\delta$ will sit at $0$ most of the time. This encourages traders to use the module.
 
@@ -108,3 +108,6 @@ The base pool is measured in `usdr` unit. SDR is a virtual currency that is inte
 
 $$ \delta_{h+1} = \delta_{h} \cdot ( 1 - \frac{1}{r}) $$
 
+Or as non-recursive equation assuming that a single swap happens at block height 0 and no swap happens again:
+
+$$ \delta_{h} = \delta_{0} \cdot ( 1 - \frac{1}{r})^h $$
