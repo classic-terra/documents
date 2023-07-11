@@ -111,3 +111,9 @@ $$ \delta_{h+1} = \delta_{h} \cdot ( 1 - \frac{1}{r}) $$
 Or as non-recursive equation assuming that a single swap happens at block height 0 and no swap happens again:
 
 $$ \delta_{h} = \delta_{0} \cdot ( 1 - \frac{1}{r})^h $$
+
+We see immediately that the pool recovers from a single swap in a rate that is similar to the rate of decay for radioactive isotopes. The half life is (in blocks) is given by:
+
+$$ h_{1/2} = \frac{\log{(2)}}{\log{(r)} - \log{(r-1)}} $$
+
+So in the case of having a recovery period of 18 it would mean that our half life is $h_{1/2} \approx 12$ blocks. If we multiply the block time this gives us $72$ seconds of half life recovery period.
