@@ -50,6 +50,7 @@
 | /treasury/parameters                        | /terra/treasury/v1beta1/params                                      |
 | /treasury/indicators                        | /terra/treasury/v1beta1/indicators                                  |
 | /treasury/burn_tax_exemption_list           | /terra/treasury/v1beta1/burn_tax_exemption_list                     |
+| /node_info                                  | /cosmos/base/tendermint/v1beta1/node_info                           |
 
 ## CosmWasm
 1. Enable StargateQuerier which allows DApps to query from Terra Classic without the need to declare *`<TerraQuery>`*. This will allow greater compatibility with `Deps<Empty>` and cw-multi-test.
