@@ -6,9 +6,8 @@ The `v2.1.0` upgrade happens via chain halt upgrade on May 31st 2023. All `terra
 
 After chain halt the `rebel-2` upgrade testnet binary can be installed using the following chain of cli commands:
 
-- `git clone https://github.com/classic-terra/core core-v2.1.0`
+- `git clone --depth 1 --branch v2.1.0 https://github.com/classic-terra/core core-v2.1.0`
 - `cd core-v2.1.0`
-- `git checkout tags/v2.1.0-rebels2`
 - `make build && make install`
 
 Check the installed `terrad` version using `terrad version`. This should show `v2.1.0-rc.1`. After installation ***DO NOT*** start the binary again. Please, perform another step before restarting the binary.
