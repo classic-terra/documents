@@ -16,7 +16,7 @@ Please use the following network parameters to join the `rebel-2` network:
 
 - [addrbook.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/addrbook.json)
 - [genesis.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/genesis.json)
-  - Use [v1.0.5-full-archive](https://github.com/classic-terra/core/releases/tag/v1.0.5-full-archive) for starting from the genesis
+  - Use [v1.1.0](https://github.com/classic-terra/core/releases/tag/v1.1.0) for starting from the genesis
 - [pruned snapshot (21.04.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-21-04-2023.tar)
 - [pruned snapshot (17.05.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-17-05-2023.tar)
 - [pruned snapshot (02.06.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-02-06-2023.tar)
