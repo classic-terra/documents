@@ -14,15 +14,17 @@ This is a rather big upgrade the Terra Classic network is facing here bundled wi
 
 Please use the following network parameters to join the `rebel-2` network:
 
-- [genesis.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/genesis.json)
 - [addrbook.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/addrbook.json)
-- [archive snapshot (21.04.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-21-04-2023.tar)
-- [archive snapshot (17.05.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-17-05-2023.tar)
-- [archive snapshot (02.06.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-02-06-2023.tar)
-- [v2.0.1](https://github.com/classic-terra/core/archive/refs/tags/v2.0.1.tar.gz) of the `terrad` client
+- [genesis.json](https://network-rebel-2.s3.amazonaws.com/rebel-2/genesis.json)
+  - Use [v1.1.0](https://github.com/classic-terra/core/releases/tag/v1.1.0) for starting from the genesis
+- [pruned snapshot (21.04.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-21-04-2023.tar)
+- [pruned snapshot (17.05.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-17-05-2023.tar)
+- [pruned snapshot (02.06.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/archive-snapshot-02-06-2023.tar)
+  - Use [v2.0.1](https://github.com/classic-terra/core/archive/refs/tags/v2.0.1.tar.gz) for above snapshots
+- [pruned snapshot (10.09.2023)](https://network-rebel-2.s3.amazonaws.com/rebel-2/snapshot-10-09-2023.tar.lz4)
+  - Use [v2.1.1](https://github.com/classic-terra/core/archive/refs/tags/v2.1.1.tar.gz) for above snapshots
 - We kindly ask you to use the `main` branch of the following oracle feeder: [here](https://github.com/classic-terra/oracle-feeder)
-- for the oracle feeder please use the following version: `git checkout 81c450d36c3d64fd4d9167bc5ef8c49ce9ad104a`
-- In `app.toml`, please set `min-gas-prices = '1.0uluna,1.0uusd'`
+- In `app.toml`, please set `minimum-gas-prices = "1.0uluna,1.0uusd"`
 
 NOTE: We cannot exactly give you a guide how to join the testnet or what your local setup has to be in order to join the net. The purpose of this initiative is to test the upgrade with an validatorset and in an environment that is as close as possible to the `columbus-5` mainnet. We would prefer that the validators would join the `rebel-2` network with a setup that is similar to the one that they use for the `columbus-5`.
 
