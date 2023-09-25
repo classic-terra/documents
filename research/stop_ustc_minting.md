@@ -1,5 +1,7 @@
 # USTC minting 
 
+Passed proposal: https://station.terraclassic.community/proposal/columbus-5/11784
+
 ## Current mechanism
 https://github.com/classic-terra/core/blob/main/x/market/keeper/swap.go#L72
 
