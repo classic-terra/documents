@@ -10,21 +10,21 @@ wget https://github.com/classic-terra/documents/raw/main/patches/terrad-v2.4.2-p
 ```
 tar -xvf terrad-v2.4.2-patch-asa-2024-007.tar.gz
 ```
-3. determine the installation location of your `terrad` binary and save it in an env variable:
+3. make sure the version is right
 ```
-TERRAD_LOC=$(which terrad)
-```
-4. install the patched terrad
-```
-mv terrad $TERRAD_LOC
-```
-5. make sure the version is right
-```
-terrad version --long | grep ibc-go
+./terrad version --long | grep ibc-go
 ```
 this should output:
 ```
 - github.com/cosmos/ibc-go/v6@v6.2.1 => ../ibc-go@(devel)
+```
+4. determine the installation location of your `terrad` binary and save it in an env variable:
+```
+TERRAD_LOC=$(which terrad)
+```
+5. install the patched terrad
+```
+mv terrad $TERRAD_LOC
 ```
 6. stop your client
 7. restart the client
