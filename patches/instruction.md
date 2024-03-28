@@ -10,7 +10,7 @@ wget https://github.com/classic-terra/documents/raw/main/patches/terrad-v2.4.2-p
 ```
 tar -xvf terrad-v2.4.2-patch-asa-2024-007.tar.gz
 ```
-3. make sure the version is right
+3. make sure the version is right and it works
 ```
 ./terrad version --long | grep ibc-go
 ```
