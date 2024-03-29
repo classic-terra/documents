@@ -4,7 +4,7 @@ If you are a validator on Terrad, please fix a critical IBC vulnerability by fol
 
 1. download the patched binary:
 ```
-wget https://github.com/classic-terra/documents/raw/main/patches/terrad-v2.4.2-patch-asa-2024-007.tar.gz
+wget https://github.com/classic-terra/documents/raw/main/patches/terra_2.4.2_Linux_x86_64-patch-asa-2024-007.tar.gz
 ```
 2. unpack it:
 ```
