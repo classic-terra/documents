@@ -4,7 +4,7 @@ A new release of the `terrad` client has been created on the 10th of July 2024. 
 
 https://github.com/classic-terra/core/releases/tag/v3.1.0
 
-The key change in this version is the introduction of the Oracle Split logic according to proposals 12098 and 12114. The logic will divert Community Pool rewards (originated from the Tax Split) to the Oracle Pool (OP) and therefore slow down it's depletion rate. 
+The key change in this version is the introduction of the Oracle Split logic according to **proposals 12098 and 12114**. The logic will divert Community Pool rewards (originated from the Tax Split) to the Oracle Pool (OP) and therefore slow down it's depletion rate. 
 
 ### Proposal
 
