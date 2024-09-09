@@ -8,13 +8,13 @@ This release applies the wasmd security patch from Genuine Labs' PR #512 on v3.1
 
 ### Proposal
 
-This proposal seeks validator and community approval to update the `terrad` client to `v3.1.5` (upgrade name `v8_2`). The chain will be halted at **block height xxxxxx**  which will approximately be processed on **29th of July 2024 13:00am UTC**. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
+This proposal seeks validator and community approval to update the `terrad` client to `v3.1.5` (upgrade name `v8_2`). The chain will be halted at **block height 19850000**  which will approximately be processed on **18th of September 2024 11:15am UTC**. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
 
 ### Upgrade Instructions for Validators
 
 As soon as the chain automatically halts at the designated upgrade block height follow the upgrade procedure. Please **don't execute these commands before the chain has halted**:
 
-```
+```bash
 $ git clone https://github.com/classic-terra/core core-v3.1.5
 $ cd core-v3.1.5
 $ git checkout v3.1.5
@@ -23,7 +23,7 @@ $ make build && make install
 
 In case you already have a local copy of the repository inside the local folder `core`:
 
-```
+```bash
 $ cd core
 $ git stash
 $ git fetch --all
@@ -34,7 +34,7 @@ $ make build && make install
 
 Check the correct installation:
 
-```
+```bash
 $ terrad version
 v3.1.5
 ```
