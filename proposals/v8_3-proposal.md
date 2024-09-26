@@ -4,7 +4,7 @@ A new release of the `terrad` client has been created on the 26th of September 2
 
 https://github.com/classic-terra/core/releases/tag/v3.1.6
 
-This release applies an upstream wasmvm security patch. This update bumps wasmd to 1.5.5. This update also includes an improvement on gas simulation of taxable transactions which was only released to endpoint providers as it did not contain consensus-relevant changes (v3.1.5-sim.2).
+This release applies an upstream wasmvm security patch. This update bumps wasmvm to 1.5.5. This update also includes an improvement on gas simulation of taxable transactions which was only released to endpoint providers as it did not contain consensus-relevant changes (v3.1.5-sim.2).
 
 ### Proposal
 
