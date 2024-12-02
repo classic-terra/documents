@@ -49,7 +49,7 @@ https://github.com/classic-terra/mantlemint/releases/tag/v3.3.0
 
 ### Testing and Rollback
 
-A rehearsal upgrade to `v3.3.0` was conducted on rebel-2 testnet on 7th of November 2024. If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v10` can be applied to the previous release `v3.1.6`. In this case validators are going to be asked to roll back to a previous state and apply a patched `v3.1.6` release.
+An upgrade to `v3.3.0` release candidate was conducted on rebel-2 testnet on 7th of November 2024 and the changes were tested extensively. If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v10` can be applied to the previous release `v3.1.6`. In this case validators are going to be asked to roll back to a previous state and apply a patched `v3.1.6` release.
 
 ### Effects of Voting
 
