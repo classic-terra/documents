@@ -8,7 +8,7 @@ This release introduces a new simplified tax handling. Details on the new tax ha
 
 ### Proposal
 
-This proposal seeks validator and community approval to update the `terrad` client to `v3.3.0` (upgrade name `v10`). The chain will be halted at **block height 21163600**  which will approximately be processed on **Dec 17, 2024, 12:57:47 UTC**. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
+This proposal seeks validator and community approval to update the `terrad` client to `v3.3.0` (upgrade name `v10_1`). The chain will be halted at **block height 21163600**  which will approximately be processed on **Dec 17, 2024, 12:57:47 UTC**. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
 
 ### Upgrade Instructions for Validators
 
@@ -49,7 +49,7 @@ https://github.com/classic-terra/mantlemint/releases/tag/v3.3.0
 
 ### Testing and Rollback
 
-An upgrade to `v3.3.0` release candidate was conducted on rebel-2 testnet on 7th of November 2024 and the changes were tested extensively. If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v10` can be applied to the previous release `v3.1.6`. In this case validators are going to be asked to roll back to a previous state and apply a patched `v3.1.6` release.
+An upgrade to `v3.3.0` release candidate was conducted on rebel-2 testnet on 7th of November 2024 and the changes were tested extensively. If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v10_1` can be applied to the previous release `v3.1.6`. In this case validators are going to be asked to roll back to a previous state and apply a patched `v3.1.6` release.
 
 ### Effects of Voting
 
