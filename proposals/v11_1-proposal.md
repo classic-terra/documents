@@ -17,6 +17,7 @@ This proposal seeks validator and community approval to update the `terrad` clie
 
 ### Upgrade Instructions for Validators
 
+> **IMPORTANT**: This release requires Go version 1.22.12. Please ensure you have upgraded your Go installation before proceeding with the client upgrade. Validators running older Go versions will not be able to compile and run the new release.
 
 As soon as the chain automatically halts at the designated upgrade block height follow the upgrade procedure. Please **don't execute these commands before the chain has halted**:
 
@@ -34,7 +35,7 @@ $ cd core
 $ git stash
 $ git fetch --all
 $ git fetch --tags
-$ git checkout v3.4.0-rc.0
+$ git checkout v3.4.0-rc.3
 $ make build && make install
 ```
 
@@ -54,7 +55,7 @@ Infrastructure providers who run mantlemint accelerated LCDs are asked to build 
 https://github.com/classic-terra/mantlemint/releases/tag/v3.4.0-rc.3
 
 ### Testing and Rollback
-  
+
 An upgrade to `v3.4.0-rc.0` release candidate was conducted on rebel-2 testnet on 7th of November 2024 and the changes were tested extensively. If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v11_1` can be applied to the previous release `v3.1.6`. In this case validators are going to be asked to roll back to a previous state and apply a patched `v3.1.6` release.
 
 ### Effects of Voting
