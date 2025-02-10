@@ -7,9 +7,9 @@ https://github.com/classic-terra/core/releases/tag/v3.4.0
 This release introduces:
 - Implmentation for fork modules removal: https://station.terraclassic.community/proposal/columbus-5/12142
 - Patch for wasmvm and cometbft security fixes: https://github.com/classic-terra/core/pull/549
-- Fix multisend handling for the simplify tax: https://github.com/classic-terra/core/pull/544
+- Fix multisend handling for the simplified tax: https://github.com/classic-terra/core/pull/544
  
-The upgrade should cause no changes to the chain's state, interface, or functionality. The details of the unform removal can be found here: https://github.com/orbitorg/core/issues
+The upgrade should cause no changes to the chain's state, interface, or functionality. The details of the unfork removal can be found here: https://github.com/orgs/orbitorg/projects/2/views/1
 
 ### Proposal
 
