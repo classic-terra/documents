@@ -9,7 +9,9 @@ This release introduces:
 - Patch for wasmvm and cometbft security fixes: https://github.com/classic-terra/core/pull/549
 - Fix multisend handling for the simplified tax: https://github.com/classic-terra/core/pull/544
  
-The upgrade should cause no changes to the chain's state, interface, or functionality. The details of the unfork removal can be found here: https://github.com/orgs/orbitorg/projects/2/views/1
+The upgrade should cause no changes to the chain's state, interface, or functionality. The details of the fork modules removal can be found here:
+-  https://github.com/orbitorg/core/issues/2
+-  https://github.com/orbitorg/core/issues/5
 
 ### Proposal
 
