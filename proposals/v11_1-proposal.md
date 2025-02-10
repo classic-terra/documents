@@ -1,6 +1,6 @@
 ### Release v3.4.0
 
-A new release of the `terrad` client has been created on the 7th of January 2025. The release notes for the new version can be viewed here:
+A new release of the `terrad` client has been created on the 10th of January 2025. The release notes for the new version can be viewed here:
 
 https://github.com/classic-terra/core/releases/tag/v3.4.0
 
@@ -13,7 +13,7 @@ The upgrade should cause no changes to the chain's state, interface, or function
 
 ### Proposal
 
-This proposal seeks validator and community approval to update the `terrad` client to `v3.4.0` (upgrade name `v11_1`). The chain will be halted at **block height {tobedecided}**  which will approximately be processed on **{tobedecided}**. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
+This proposal seeks validator and community approval to update the `terrad` client to `v3.4.0` (upgrade name `v11_1`). The chain will be halted at **block height 22176864**  which will approximately be processed on **Feb 25, 2025 3:00PM UTC**. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
 
 ### Upgrade Instructions for Validators
 
