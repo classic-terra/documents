@@ -1,6 +1,6 @@
 ### Release v3.4.0
 
-A new release of the `terrad` client has been created on the 10th of January 2025. The release notes for the new version can be viewed here:
+A new release of the `terrad` client has been created on the 10th of February 2025. The release notes for the new version can be viewed here:
 
 https://github.com/classic-terra/core/releases/tag/v3.4.0
 
