@@ -69,6 +69,8 @@ This proposal involves using centralized exchanges to acquire USDC, which can on
 
 We nominate **LuncGoblins** aka **Fragwuerdig** (real name: Till Ziegler) to handle these high-risk trades. He is a well-respected and trusted community member with KYC certification through SolidProof ([SolidProof KYC](https://github.com/solidproof/projects/tree/main/2024/Fragwuerdig)). He has no reason or incentive to embezzle this grant.
 
+![Embezzlement](metadata/embezzlement.jpg)
+
 The risk of partial or full loss of funds due to human or technical error can be mitigated by splitting the spending proposal into multiple installments. Internally, these installments will be further divided into three equal parts, ensuring that each trade only involves approximately \$2.5K.
 
 ### Price Impact and Acquisition Strategy
