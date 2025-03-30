@@ -5,8 +5,6 @@
     <img src="metadata/banner.png" alt="Embezzlement">
 </p>
 
-
-
 ### Motivation
 
 Currently, **Terra Classic lacks a direct on-chain stablecoin trading pair for LUNC**, forcing users to rely on centralized exchanges (CEXs) for stable conversions. This reliance introduces **liquidity fragmentation, higher slippage, and centralized risks**, limiting the efficiency of on-chain trading and DeFi applications. Without a stable LUNC pair, users face difficulty executing trades with predictable pricing, affecting traders, liquidity providers, and developers building on Terra Classic. The lack of on-chain liquidity also **inhibits the development of DeFi infrastructure**, which typically relies on the availability of on-chain stablecoins.
