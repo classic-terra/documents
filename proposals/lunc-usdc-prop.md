@@ -61,7 +61,7 @@ This is a large, broad, and diverse group of respected community members. This i
 
 ### Community Ownership and Non-Commercial Nature
 
-At all times, the funds involved in this proposal, including both the initial LUNC allocation and the corresponding USDC swap outputs, remain community-owned. The multisig wallet and the use of centralized exchanges serve only as mechanisms to facilitate and manage the liquidity deployment. The multisig signers act on a fully voluntary basis, ensuring that no individual or entity profits, enriches themselves, or engages in commercial activities through this process. The funds will always be directed towards the community-driven goal of establishing on-chain liquidity, and all actions are taken transparently and in good faith. The multisig signers will also get no financial compensation for their actions to ensure the non-commercial nature of this initiative.
+At all times, the funds involved in this proposal, including both the initial LUNC allocation and the corresponding USDC swap outputs as well as the resulting pooled liqudity, remain community-owned. The multisig wallet and the use of centralized exchanges serve only as mechanisms to facilitate and manage the liquidity deployment. The multisig signers act on a fully voluntary basis, ensuring that no individual or entity profits, enriches themselves, or engages in commercial activities through this process. The funds will always be directed towards the community-driven goal of establishing on-chain liquidity, and all actions are taken transparently and in good faith. The multisig signers will also get no financial compensation for their actions to ensure the non-commercial nature of this initiative.
 
 ### High-Risk CEX Trades
 
