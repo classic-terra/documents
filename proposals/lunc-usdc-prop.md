@@ -57,7 +57,6 @@ We propose the following list of multisig signers. These are individuals and val
 
 - LuncGoblins
 - LuncLive
-- Jacob Gadikian
 - JurisProtocol
 - Hexxagon
 - Vegas
