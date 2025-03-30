@@ -1,4 +1,11 @@
-## Structured Approach to Establish On-Chain Liquidity for USDC on Terra Classic
+
+## Phased Approach to Establish On-Chain Liquidity for USDC on Terra Classic
+
+<p align="center">
+    <img src="metadata/banner.png" alt="Embezzlement">
+</p>
+
+
 
 ### Motivation
 
