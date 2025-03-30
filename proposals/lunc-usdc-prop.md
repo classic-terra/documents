@@ -67,7 +67,7 @@ The risk for partial or full losses of the spend due to human or technical error
 
 ### Price Impact and Acquisition Strategy
 
-This proposal ensures to minimize the price impact on LUNC by matching the +/-2% depth of the centralized market on Binance. This means, that when a single trade with 50% of the two-sided target liquidity is exectued, then the price is expected to move only 2% downwards. However, to further inhibit negative price movement, the acquisition will take part in several trades to minimize. The swaps will only be executed into a market up movement on the 4h timeframe. The trades will not be initiated with a Market Order but with a Limit Order at current market price (Stop Limit) to minimize exposure to slippage.
+This proposal ensures to minimize the price impact on LUNC by matching the +/-2% depth of the centralized market on Binance. This means, that when a single trade with 50% of the two-sided target liquidity is exectued, then the price is expected to move only 2% downwards. However, to further inhibit negative price movement, the acquisition will take part in several trades. The swaps will only be executed into a market up movement on the 4h timeframe. The trades will not be initiated with a Market Order but with a Limit Order at current market price (Stop Limit) to minimize exposure to slippage.
 
 ### Summary 
 
