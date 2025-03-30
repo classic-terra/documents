@@ -18,6 +18,8 @@ The introduction of a USDC/LUNC liquidity pool will address these challenges by:
 
 - **Supporting existing DEX platforms**: Injecting liquidity into Terraport helps these platforms increase their trading volume, attracting more users and improving overall ecosystem efficiency.
 
+- **Putting Community Funds to Work**. Up until now, community funds have been sitting dormant in the Community Pool. This proposal presents an opportunity to earn yield from this capital through swap fees on the seeded liquidity.
+
 ### Execution Plan
 
 1. Split the spending request into multiple proposals to control the flow of LUNC into the market without creating excessive volatility. The proposer recommends requesting and deploying the liquidity in three equal installments and applying steps 2 to 8 for each installment.
