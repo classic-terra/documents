@@ -22,7 +22,7 @@ The introduction of a USDC/LUNC liquidity pool will address these challenges by:
 
 1. Split the spend request into multiple proposals to control the flow of LUNC into the market without creating too much volatility. The proposer recommends to request and deploy the liquidity in three equal installments and pply steps 2 to 8 for each of these installments.
 
-2. The spend proposal is going to transfer the requested allocation of LUNC into a multisig account to ensure secure and transparent execution. The multisig will be a 6/9 cw3 fixed multisig. Meaning: A smart contract managed multisig account with 9 voting parties. 6 voters to agree on a multisig action.
+2. The spend proposal is going to transfer the requested allocation of LUNC into a multisig account to ensure secure and transparent execution. The multisig will be a **8 out of 12 cw3 fixed multisig**. Meaning: A smart contract managed multisig account with 9 voting parties. 6 voters to agree on a multisig action.
 
 3. Multisig owners agree on a selected trusted multisig member to transfer funds into a centralized exchange. After that 50% of the dollar denominated funds will be transferred to that CEX and then swapped out to USDC.
 
@@ -39,6 +39,35 @@ The introduction of a USDC/LUNC liquidity pool will address these challenges by:
 ### Funding Request:
 
 800M LUNC, split into three spend proposals, each funding a portion of the liquidity initiative. 400M LUNC will be used to acquire USDC. At current market rates this will provide roughly $45k liquidity (or 22.5k single-sided).
+
+### Multisig Signers
+
+We propose the follwoing list of multisigners. These are individuals and validators that showed strong support for the LUNC ecosystem in the long run
+
+- LuncGoblins
+- LuncLive
+- Jacob Gadikian
+- JurisProtocol
+- LVS
+- Hexxagon
+- Vegas
+- Rexyz
+- Nicolas Boulay
+- Garuda
+- Jesus is Lord
+- Allnodes
+
+It is a rather big list. A very broad and diverse list of community members that are well respected. This initiative aims to forge the fractions together and create a valuable effort for the chain.
+
+### High Risk CEX Trades
+
+This proposal will take a route over centralized Exchanges to perform the USDC acquisition. This can only be undertaken by a single entity or individual, because of the nature of CEXs. We are fully aware that this goes against decentralized practices that have been common on Terra Classic. But the USDC cannot be acquired on the DEX market, because there is simply not enough on-chain liquidty - which is a problem that this very proposal tries to challenge and target. We nominate **LuncGoblins** aka **Fragwuerdig** (real name Till Ziegler) to take these high risk trades. He is a well-respected and trusted community member and has a KYC certification with SolidProof (see https://github.com/solidproof/projects/tree/main/2024/Fragwuerdig). He has no reason or incentive to embezzle this grant.
+
+The risk for partial or full losses of the spend due to human or technical error can be mitigated by splitting up the spend prop into several installments. Internally, the installments will be further divided into three equal parts so that the whole process will only carry out only $2.5k per trade.
+
+### Price Impact and Acquisition Strategy
+
+This proposal ensures to minimize the price impact on LUNC by matching the +/-2% depth of the centralized market on Binance. This means, that when a single trade with 50% of the two-sided target liquidity is exectued, then the price is expected to move only 2% downwards. However, to further inhibit negative price movement, the acquisition will take part in several trades to minimize. The swaps will only be executed into a market up movement on the 4h timeframe. The trades will not be initiated with a Market Order but with a Limit Order at current market price (Stop Limit) to minimize exposure to slippage.
 
 ### Summary 
 
