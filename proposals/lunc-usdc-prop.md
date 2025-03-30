@@ -59,6 +59,10 @@ We propose the following list of multisig signers. These are individuals and val
 
 This is a large, broad, and diverse group of respected community members. This initiative aims to unite different factions and create a valuable effort for the chain.
 
+### Community Ownership and Non-Commercial Nature
+
+At all times, the funds involved in this proposal, including both the initial LUNC allocation and the corresponding USDC swap outputs, remain community-owned. The multisig wallet and the use of centralized exchanges serve only as mechanisms to facilitate and manage the liquidity deployment. The multisig signers act on a fully voluntary basis, ensuring that no individual or entity profits, enriches themselves, or engages in commercial activities through this process. The funds will always be directed towards the community-driven goal of establishing on-chain liquidity, and all actions are taken transparently and in good faith. The multisig signers will also get no financial compensation for their actions to ensure the non-commercial nature of this initiative.
+
 ### High-Risk CEX Trades
 
 This proposal involves using centralized exchanges to acquire USDC, which can only be undertaken by a single entity or individual due to the nature of CEXs. We acknowledge that this approach goes against the decentralized practices traditionally followed on Terra Classic. However, USDC cannot currently be acquired on the DEX market due to insufficient on-chain liquidity—precisely the problem this proposal aims to solve.
