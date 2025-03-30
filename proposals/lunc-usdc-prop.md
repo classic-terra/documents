@@ -1,4 +1,4 @@
-## Phased Approach to Establish On-Chain Liquidity for USDC on Terra Classic
+## Structured Approach to Establish On-Chain Liquidity for USDC on Terra Classic
 
 ### Motivation
 
