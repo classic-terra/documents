@@ -25,6 +25,10 @@ The introduction of a USDC/LUNC liquidity pools will address these challenges by
 
 ### Execution Plan
 
+<p align="center">
+    <img src="metadata/exec.png" alt="Embezzlement">
+</p>
+
 1. Establish a multisig escrow account with nine signers, requiring six agreeing voting members to carry out a transaction. The multisig (MS) will be created using the DAODAO platform on Terra Classic.
 
 2. Eligible DEXs on Terra Classic can apply for liquidity seeding by submitting a spending proposal into the established multisig account (step 1). Passing such a proposal instructs the MS owners to carry out the following transactions on behalf of the community. Eligible DEX platforms are defined later in this document.
@@ -58,8 +62,9 @@ We propose the following list of multisig signers. These are individuals and val
 - LuncGoblins
 - LuncLive
 - JurisProtocol
-- Hexxagon
 - Vegas
+
+- Hexxagon
 - Rexyz
 - Nicolas Boulay
 - Garuda
