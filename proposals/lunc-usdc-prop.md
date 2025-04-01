@@ -23,6 +23,8 @@ The introduction of a USDC/LUNC liquidity pools will address these challenges by
 
 - **Putting Community Funds to Work**. Up until now, community funds have been sitting dormant in the Community Pool. This proposal presents an opportunity to earn yield from this capital through swap fees on the seeded liquidity.
 
+- **Burns**. A native LUNC/USDC pair will generate tax volume and, therefore, LUNC burns, Community Pool funding and Oracle Pool funding. There are other off-chain platforms to swap LUNC/USDC, but these usually do not account for Terra Classic's on chain taxes.
+
 ### Execution Plan
 
 <p align="center">
@@ -63,12 +65,11 @@ We propose the following list of multisig signers. These are individuals and val
 - LuncLive
 - JurisProtocol
 - Vegas
-
 - Hexxagon
 - Rexyz
 - Nicolas Boulay
 - Garuda
-- Jesus is Lord
+- JESUSisLORD
 - Allnodes
 - Renzo
 
