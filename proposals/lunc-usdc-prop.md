@@ -49,6 +49,10 @@ The introduction of a USDC/LUNC liquidity pools will address these challenges by
 
 9. The multisig will send the acquired LP tokens to the Terra Classic governance account. From there, the LP tokens can be managed in a **fully decentralized** manner.
 
+### Recommended Funding Request Amount
+
+This proposal formally recommends that applying DEXs request funding of 25,000 USDC and 25,000$ worth of LUNC. This amount aligns with Binance’s liquidity depth and ensures sufficient on-chain trading depth while maintaining efficient capital allocation. However, the final funding request is subject to the applying DEX's specific spend proposal and should consider the DEX's trading volume to maximize capital efficiency and avoid liquidity fragmentation.
+
 ### Application Eligibility
 
 The applying DEXs shall fulfill the following requirements to receive liquidity funding:
