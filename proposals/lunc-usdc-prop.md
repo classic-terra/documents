@@ -65,6 +65,7 @@ We propose the following list of multisig signers. These are individuals and val
 - Garuda
 - Jesus is Lord
 - Allnodes
+- Renzo
 
 This is a large, broad, and diverse group of respected community members. This initiative aims to unite different factions and create a valuable effort for the chain.
 
