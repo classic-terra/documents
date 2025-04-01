@@ -56,16 +56,18 @@ The applying DEXs shall fulfill the following requirements to receive liquidity 
 We propose the following list of multisig signers. These are individuals and validators who have demonstrated strong support for the LUNC ecosystem over the long run:
 
 - LuncGoblins
-- LuncLive
 - JurisProtocol
+
+- LuncLive
 - Hexxagon
-- Vegas
 - Rexyz
 - Nicolas Boulay
 - Garuda
 - Jesus is Lord
 - Allnodes
 - Renzo
+- Vegas
+
 
 This is a large, broad, and diverse group of respected community members. This initiative aims to unite different factions and create a valuable effort for the chain.
 
