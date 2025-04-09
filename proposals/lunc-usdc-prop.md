@@ -31,13 +31,13 @@ The introduction of a USDC/LUNC liquidity pools will address these challenges by
     <img src="metadata/exec.png" alt="Embezzlement">
 </p>
 
-1. Establish a multisig escrow account with nine signers, requiring six agreeing voting members to carry out a transaction. The multisig (MS) will be created using the DAODAO platform on Terra Classic.
+1. Establish a multisig escrow account with **ten signers**, requiring **seven agreeing voting members** to carry out a transaction. The multisig (MS) will be created using the DAODAO platform on Terra Classic.
 
 2. Eligible DEXs on Terra Classic can apply for liquidity seeding by submitting a spending proposal into the established multisig account (step 1). Passing such a proposal instructs the MS owners to carry out the following transactions on behalf of the community. Eligible DEX platforms are defined later in this document.
 
 3. Split the spending request into multiple installments to control the flow of LUNC into the market without creating excessive volatility.
 
-4. The multisig owners will transfer 50% of the spending requests from step 2 into Binance for swapping. A selected, trusted multisig member will manage these funds on the centralized platform. The trusted member will swap the amount according to a strategy introduced later in this document.
+4. The multisig owners will transfer 50% of the spending requests from step 2 into Binance for swapping. In this step the custodials will make sure to follow a tranched approach, so that there are no more than $2.5k assets under CEX management at a time. A selected, trusted multisig member will manage these funds on the centralized platform. The trusted member will swap the amount according to a strategy introduced later in this document. 
 
 5. Transfer the acquired USDC to Coinbase. This step is necessary because Coinbase has a withdrawal function to transfer USDC to the native issuance chain of USDC for the Cosmos ecosystem (see next step).
 
@@ -74,10 +74,17 @@ We propose the following list of multisig signers. These are individuals and val
 - Nicolas Boulay
 - Garuda
 - JESUSisLORD
-- Allnodes
 - Renzo
 
 This is a large, broad, and diverse group of respected community members. This initiative aims to unite different factions and create a valuable effort for the chain.
+
+### Alternative Swap Provider
+
+After this proposal was posted on Commonwealth for discussion, the community provided thorough and valuable feedback. One of the suggestions was to use a cross-chain swap provider like [simpleswap.io](https://simpleswap.io). This provider would allow LUNC to be swapped **directly** into USDC on Noble, with a 1% swap fee.
+
+A significant advantage of this route is that the swap could be triggered by the signatory wallet as a whole—eliminating the need for management by a single person. The proposers would like to include this alternative swap method in the proposal as a substitute for steps 4, 5, and 6 above.
+
+As with the original method, the swap will be executed in $2.5k tranches, ensuring that only $2.5k in value is ever under foreign management at a time.
 
 ### Community Ownership and Non-Commercial Nature
 
