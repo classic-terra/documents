@@ -13,9 +13,9 @@ Terraport fulfills these requirements and is therefore eligible.
 
 Please reconsider your vote:
 
-YES - If you agree to inject 25k USDC and $25k LUNC equivalent in liqudity for Terraport as outlined in proposal 12171
-NO - If you disagree to inject 25k USDC and $25k LUNC equivalent in liqudity for Terraport as outlined in proposal 12171
-ABSTAIN - If you don't want to take decisive action
-NO WITH VETO - If you belive this proposal constitutes a governance attack
+- **YES** - If you agree to inject 25k USDC and $25k LUNC equivalent in liqudity for Terraport as outlined in proposal 12171
+- **NO** - If you disagree to inject 25k USDC and $25k LUNC equivalent in liqudity for Terraport as outlined in proposal 12171
+- **ABSTAIN** - If you don't want to take decisive action
+- **NO WITH VETO** - If you belive this proposal constitutes a governance attack
 
 Original Forum Discussion can be reviewed [here](https://discourse.luncgoblins.com/t/request-to-inject-liquidity-for-terraport-dex-as-outlined-by-proposal-12171)
