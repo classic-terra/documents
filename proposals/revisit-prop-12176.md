@@ -8,7 +8,7 @@ The requirements to be eligible are:
 
 - Project Team KYC
 - Project Code Audit
-- The submitted spplication proposal is a spending prop into the 12171 escrow wallet 
+- The submitted application proposal is a spending prop into the 12171 escrow wallet 
 
 Terraport fulfills these requirements and is therefore eligible.
 
