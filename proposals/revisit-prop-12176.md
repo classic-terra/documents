@@ -6,8 +6,9 @@ Some validators argue that Terraport should not receive liquidity because of the
 
 The requirements to be eligible are:
 
-- Team KYC
-- Project audit
+- Project Team KYC
+- Project Code Audit
+- The submitted spplication proposal is a spending prop into the 12171 escrow wallet 
 
 Terraport fulfills these requirements and is therefore eligible.
 
