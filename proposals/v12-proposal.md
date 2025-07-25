@@ -1,5 +1,5 @@
 ### Release v3.5.0
-A new release of the `terrad` client has been created on . The release notes for the new version can be viewed here:
+A new release of the `terrad` client has been created on 25 Jul 2025 . The release notes for the new version can be viewed here:
 https://github.com/classic-terra/core/releases/tag/v3.5.0
 
 This release introduces a new on-chain module enables tax-exempt transactions based on address groupings called zones. Tax logic is now handled natively by the chain using zone-based rules set via governanceg. The technical release notes can be found at https://github.com/classic-terra/documents/blob/main/chain-updates/v3_5_0.md
