@@ -6,7 +6,7 @@ This release introduces a new on-chain module enables tax-exempt transactions ba
 
 ### Proposal
 
-This proposal seeks validator and community approval to update the `terrad` client to `v3.5.0` (upgrade name `v12`). The chain will be halted at 24650205 which will approximately be processed on Aug 15 2025 15h30PM UTC. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
+This proposal seeks validator and community approval to update the `terrad` client to `v3.5.0` (upgrade name `v12`). The chain will be halted at 24660000 which will approximately be processed on Aug 15 2025 15h30PM UTC. The actual halt time is an early estimate, can vary and depends on the chain's block speed until the specified height is reached. Upon passing of this proposal, an automatic chain halt will be scheduled at the specified height. The validators are going to be asked to install the new version of the `terrad` client after the chain halt occured.
 
 ### Upgrade Instructions for Validators
 
