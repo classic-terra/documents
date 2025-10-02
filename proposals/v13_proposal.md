@@ -43,7 +43,7 @@ After that, restart the client with `terrad start` or your system service and wa
 
 Infrastructure providers who run mantlemint accelerated LCDs are asked to build and install the updated mantlemint version from source after the upgrade block height is reached:
 
-https://github.com/classic-terra/core/releases/tag/v3.6.0
+https://github.com/classic-terra/mantlemint/releases/tag/v3.6.0
 
 ### Testing and Rollback
 
