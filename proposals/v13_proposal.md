@@ -1,5 +1,5 @@
 ### Release v3.6.0
-A new release of the `terrad` client has been created on Oct 2, 2025 . The release notes for the new version can be viewed here:
+A new release of the `terrad` client has been created on Oct 2nd, 2025 . The release notes for the new version can be viewed here:
 https://github.com/classic-terra/core/releases/tag/v3.6.0
 
 This release remove the wasmd fork module to use mainstream wasmd `0.46.0` version. The technical release notes can be found at https://github.com/classic-terra/documents/blob/main/chain-updates/v3_6_0.md
