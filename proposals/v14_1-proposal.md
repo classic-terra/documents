@@ -56,10 +56,16 @@ Infrastructure providers (e.g. RPC/LCD/API providers and indexers) are advised t
 
 ### Testing and Rollback
 
-- A mainnet-fork/state upgrade test was executed in collaboration with StrathCole and the upgrade completed successfully.
-- Additional testnet and ecosystem testing results should be added here as they become available.
+#### Testnet Upgrade
 
-If for some unforeseen (and unlikely) reason the new release will not be able to produce new blocks on mainnet then the upgrade name `v14_1` can be applied to a patched build or a designated fallback release. In this case validators are going to be asked to roll back to a previous state and apply the corrected binary.
+Multiple upgrades to the `v4.0.0-rc.7` release candidate were conducted on rebel-2 testnet on March 22, 2026, and the upgrade process completed successfully.
+
+If, for any unforeseen reason, the new release is unable to resume block production on mainnet, validators may be asked to roll back to the previous state and temporarily run the prior release `v3.6.2` under the same upgrade name `v14_1` until a patched `v4.0.0` release is provided.
+
+#### Mainnet Upgrade
+A mainnet-fork/state upgrade test was executed in collaboration with StrathCole and the upgrade completed successfully.
+https://hackmd.io/@StrathCole/S1JcbxeqWx
+
 
 ### Effects of Voting
 
